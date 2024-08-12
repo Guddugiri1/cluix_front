@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+} */
+
+/* body {
+  width: 100%;
+  min-height: 100vh;
+   background: #eee;
+  display: grid;
+  place-items: center;
+} */
+.bgImage {
+  background-image: url('../../../public/product1.jpg');
+  height: 500px;
+  background-size: cover;
+}
+
+.cardBox {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background-image: url('../../../public/product2.png');
+  background-size: cover;
+
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  /* border-radius: 20px; */
+  background-image: url('../../../public/product2.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.662);
+  cursor: pointer;
+ 
+}
+
+.card h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: 600;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.card span {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card span {
+  
+  top: 65%;
+
+}
+
+.card .content h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+.card .content p {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+.card .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+  background-color: #000000;
+  height: 100%;
+  opacity: 1;
+  padding-inline: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card:hover h2,
+.card:hover span {
+  opacity: 0;
+}
+
+.cardBox::before {
+  /* content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40E0D0;
+background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+  animation: glowing01 5s linear infinite;
+  transform-origin: center;
+  animation: glowing 5s linear infinite; */
+}
+
+@keyframes glowing {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
