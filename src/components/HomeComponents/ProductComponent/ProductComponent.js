@@ -30,7 +30,7 @@ const ProductComponent = () => {
   let productdata = [
     {
       id: 2,
-      name: "C012",
+      name: "CLUIX C012",
       price: "68,500.00 + GST",
       image: product1,
       morebtn: (
@@ -107,7 +107,7 @@ const ProductComponent = () => {
   let productdataHome = [
     {
       id: 2,
-      name: "C012",
+      name: "CLUIX C012",
       price: "68,500.00 + GST",
       image: product1,
       morebtn: (
