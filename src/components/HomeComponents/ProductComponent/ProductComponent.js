@@ -29,21 +29,6 @@ const ProductComponent = () => {
 
   let productdata = [
     {
-      id: 1,
-      name: "C012 reagent kit",
-      price: "45,000.00",
-      image: product,
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/1`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
-    },
-    {
       id: 2,
       name: "C012",
       price: "68,500.00",
@@ -52,6 +37,21 @@ const ProductComponent = () => {
         <>
           <div>
             <Link className="text-black hover:text-black" href={`/product/2`}>
+              View More
+            </Link>
+          </div>
+        </>
+      ),
+    },
+    {
+      id: 1,
+      name: "C012 reagent kit",
+      price: "1200.00",
+      image: product,
+      morebtn: (
+        <>
+          <div>
+            <Link className="text-black hover:text-black" href={`/product/1`}>
               View More
             </Link>
           </div>
@@ -106,22 +106,6 @@ const ProductComponent = () => {
   ];
   let productdataHome = [
     {
-      id: 1,
-      name: "C012 reagent kit",
-      price: "45,000.00",
-      image: product,
-
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/1`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
-    },
-    {
       id: 2,
       name: "C012",
       price: "68,500.00",
@@ -130,6 +114,22 @@ const ProductComponent = () => {
         <>
           <div>
             <Link className="text-black hover:text-black" href={`/product/2`}>
+              View More
+            </Link>
+          </div>
+        </>
+      ),
+    },
+    {
+      id: 1,
+      name: "C012 reagent kit",
+      price: "1200.00",
+      image: product,
+
+      morebtn: (
+        <>
+          <div>
+            <Link className="text-black hover:text-black" href={`/product/1`}>
               View More
             </Link>
           </div>
