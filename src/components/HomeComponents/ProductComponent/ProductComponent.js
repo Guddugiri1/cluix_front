@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import product from "../../../../public/img/product_1.webp";
+import product from "../../../../public/img/C012 reagent kit.jpg";
 import { SubTitle } from "@/components/shared";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -30,7 +30,7 @@ const ProductComponent = () => {
   let productdata = [
     {
       id: 1,
-      name: "C011",
+      name: "C012 reagent kit",
       price: "45,000.00",
       image: product,
       morebtn: (
@@ -107,7 +107,7 @@ const ProductComponent = () => {
   let productdataHome = [
     {
       id: 1,
-      name: "C011",
+      name: "C012 reagent kit",
       price: "45,000.00",
       image: product,
 
