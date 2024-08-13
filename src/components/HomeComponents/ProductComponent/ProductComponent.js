@@ -45,8 +45,8 @@ const ProductComponent = () => {
     },
     {
       id: 1,
-      name: "C012 reagent kit",
-      price: "1200.00",
+      name: "Reagent Kit(100 Test)",
+      price: "1500.00",
       image: product,
       morebtn: (
         <>
@@ -122,8 +122,8 @@ const ProductComponent = () => {
     },
     {
       id: 1,
-      name: "C012 reagent kit",
-      price: "1200.00",
+      name: "Reagent Kit(100 Test)",
+      price: "1500.00",
       image: product,
 
       morebtn: (
