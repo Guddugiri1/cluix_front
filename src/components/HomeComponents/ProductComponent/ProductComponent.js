@@ -31,7 +31,7 @@ const ProductComponent = () => {
     {
       id: 2,
       name: "C012",
-      price: "68,500.00",
+      price: "68,500.00 + GST",
       image: product1,
       morebtn: (
         <>
@@ -46,7 +46,7 @@ const ProductComponent = () => {
     {
       id: 1,
       name: "Reagent Kit(100 Test)",
-      price: "1500.00",
+      price: "1500.00 + GST",
       image: product,
       morebtn: (
         <>
@@ -66,7 +66,7 @@ const ProductComponent = () => {
     {
       id: 3,
       name: "Inline TDS Meter",
-      price: "1200.00",
+      price: "1200.00 + GST",
       image: product2,
       morebtn: (
         <>
@@ -108,7 +108,7 @@ const ProductComponent = () => {
     {
       id: 2,
       name: "C012",
-      price: "68,500.00",
+      price: "68,500.00 + GST",
       image: product1,
       morebtn: (
         <>
@@ -123,7 +123,7 @@ const ProductComponent = () => {
     {
       id: 1,
       name: "Reagent Kit(100 Test)",
-      price: "1500.00",
+      price: "1500.00 + GST",
       image: product,
 
       morebtn: (
@@ -144,7 +144,7 @@ const ProductComponent = () => {
     {
       id: 3,
       name: "Inline TDS Meter",
-      price: "1200.00",
+      price: "1200.00 + GST",
       image: product2,
       morebtn: (
         <>
