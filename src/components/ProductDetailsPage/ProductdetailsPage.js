@@ -984,11 +984,9 @@ const ProductdetailsPage = ({ data }) => {
                                 }
                               />
                               <ProductDescrition
-                                lable={
-                                  " Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks) : "
-                                }
+                                lable={"Total Parameters: 12 "}
                                 text={
-                                  "Total Parameters: 12<br> Free Residual Chlorine (FRC) - 100 test, ⁠Potential of Hydrogen (pH) - 10 test ⁠Total Hardness (TH) - 100 test, ⁠Total Dissolved Solid (TDS), - Unlimited (Reagent not required), Turbidity (TUR) - 100 test, ⁠Lead (Pb) - 100 test,  ⁠Iron (Fe) - 100 test, ⁠Fluoride (F) - 100 test,  ⁠Nitrate (NO3) - 100 test,  ⁠Copper (Cu) - 100 test,  Total ⁠Alkalinity - 100 test, ⁠Electrical Conductivity - Unlimited (Reagent not required)"
+                                  " Free Residual Chlorine (FRC) - 100 test, ⁠Potential of Hydrogen (pH) - 10 test ⁠Total Hardness (TH) - 100 test, ⁠Total Dissolved Solid (TDS), - Unlimited (Reagent not required), Turbidity (TUR) - 100 test, ⁠Lead (Pb) - 100 test,  ⁠Iron (Fe) - 100 test, ⁠Fluoride (F) - 100 test,  ⁠Nitrate (NO3) - 100 test,  ⁠Copper (Cu) - 100 test,  Total ⁠Alkalinity - 100 test, ⁠Electrical Conductivity - Unlimited (Reagent not required)"
                                 }
                               />
                               <ProductDescrition
