@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import product from "../../../public/img/product_1.webp";
+import product from "../../../public/img/C012reagentkit1.jpg";
 import prduct1 from "../../../public/product2.png";
 import prduct2 from "../../../public/product4.jpg";
-import prduct3 from "../../../public/product/product1.jpg";
-import prduct4 from "../../../public/product/product2.jpg";
+import prduct3 from "../../../public/img/C012reagentkit1.jpg";
+import prduct4 from "../../../public/img/C012reagentkit1.jpg";
 import prduct5 from "../../../public/product/product4.jpg";
 import prduct6 from "../../../public/product/product5.jpg";
 import prduct7 from "../../../public/product/product6.jpg";
@@ -31,9 +31,9 @@ const ProductdetailsPage = ({ data }) => {
   const [productId, setProductId] = useState(parseInt(data?.id));
   console.log("productId", productId);
   const dataArray = [
-    { id: 1, name: "C011", price: "₹ 45,000.00" },
-    { id: 2, name: "C011", price: "₹ 45,000.00" },
-    { id: 3, name: "C011", price: "₹ 45,000.00" },
+    { id: 1, name: "Reagent Kit(100 Test)", price: "₹ 15,000.00" },
+    { id: 2, name: "Reagent Kit(100 Test)", price: "₹ 15,000.00" },
+    { id: 3, name: "Reagent Kit(100 Test)", price: "₹ 15,000.00" },
   ];
 
   // Function to filter based on id
@@ -47,13 +47,12 @@ const ProductdetailsPage = ({ data }) => {
   let productData = [
     {
       id: 1,
-      name: "C011",
-      price: "₹ 50,000.00",
-      title:
-        "CLUIX--CLUIX LLP Hand-Held Digital Water Quality Testers/Analyzers With Warranty Of 1",
+      name: "Reagent Kit(100 Test)",
+      price: "₹ 15,000.00",
+      title: "Reagent Kit(100 Test)",
       productDetails: {
         quantity: "1",
-        price: "49,461.00",
+        price: "15,000.00",
         availability: " 10 In Stock",
         minOrder: 1,
       },
@@ -183,7 +182,7 @@ const ProductdetailsPage = ({ data }) => {
       name: "C012",
       price: "₹ 68,500.00",
       title:
-        "CLUIX--CLUIX LLP Hand-Held Digital Water Quality Testers/Analyzers With Warranty Of 2",
+        "CLUIX-C012 Hand-Held Digital Water Quality Testers/Analyzers With Warranty Of 2024",
       productDetails: {
         quantity: "0",
         price: "0",
@@ -989,7 +988,7 @@ const ProductdetailsPage = ({ data }) => {
                                   " Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks) : "
                                 }
                                 text={
-                                  "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications"
+                                  "Total Parameters: 12<br> Free Residual Chlorine (FRC) - 100 test, ⁠Potential of Hydrogen (pH) - 10 test ⁠Total Hardness (TH) - 100 test, ⁠Total Dissolved Solid (TDS), - Unlimited (Reagent not required), Turbidity (TUR) - 100 test, ⁠Lead (Pb) - 100 test,  ⁠Iron (Fe) - 100 test, ⁠Fluoride (F) - 100 test,  ⁠Nitrate (NO3) - 100 test,  ⁠Copper (Cu) - 100 test,  Total ⁠Alkalinity - 100 test, ⁠Electrical Conductivity - Unlimited (Reagent not required)"
                                 }
                               />
                               <ProductDescrition
