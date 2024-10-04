@@ -6,17 +6,17 @@ import prduct1 from "../../../public/product2.png";
 import prduct2 from "../../../public/product4.jpg";
 import prduct3 from "../../../public/img/C012reagentkit1.jpg";
 import prduct4 from "../../../public/img/C012reagentkit1.jpg";
-import prduct5 from "../../../public/product/product4.jpg";
-import prduct6 from "../../../public/product/product5.jpg";
-import prduct7 from "../../../public/product/product6.jpg";
-import prduct8 from "../../../public/product/product7.jpg";
+import prduct5 from "../../../public/img/C012-1.png";
+import prduct6 from "../../../public/img/C012-1.png";
+import prduct7 from "../../../public/img/C012.png";
+import prduct8 from "../../../public/img/C012-2.png";
 import prduct9 from "../../../public/product/product8.jpg";
 import prduct10 from "../../../public/product/product9.jpg";
 import prduct11 from "../../../public/product/product10.jpg";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import AnimatedCard from "./AnimatedCard";
-import product1 from "../../../public/product1.jpg";
+import product1 from "../../../public/img/C012.png";
 import product4 from "../../../public/product4.jpg";
 // import './product.css'
 

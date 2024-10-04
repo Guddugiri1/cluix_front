@@ -8,7 +8,7 @@ import { Button, Modal } from "antd";
 import { usePathname, useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa";
 import ViewMore from "@/components/shared/typography/ViewMore";
-import product1 from "../../../../public/product1.jpg";
+import product1 from "../../../../public/img/C012.png";
 import product2 from "../../../../public/product2.png";
 import product4 from "../../../../public/product4.jpg";
 
