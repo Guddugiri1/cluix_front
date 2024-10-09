@@ -26,7 +26,7 @@ const roboto = Roboto({
 export const metadata = {
   title: "Cluix",
   description:
-    "Cluix is an advanced water purification system offering lightweight fluid resources, designed for complex applications and diverse topologies.",
+    "Cluix is a leading provider of advanced analytical solutions, empowering businesses to make data-driven decisions. Our innovative tools offer comprehensive insights into various applications, from environmental monitoring to industrial process optimization.",
 };
 
 // DEFINE MAIN FUNCTION WITH EXPORT

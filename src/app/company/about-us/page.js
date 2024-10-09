@@ -1,10 +1,11 @@
 import AboutUsPageComponent from "@/components/AboutUsPage/AboutUsPageComponent";
 import React from "react";
 export const metadata = {
-  title: "Cluix",
+  title: "About Us",
   description:
-    "Cluix is an advanced water purification system offering lightweight fluid resources, designed for complex applications and diverse topologies.",
+    "Cluix is a pioneer in the field of data analytics. We are dedicated to developing innovative solutions that empower businesses to optimize their performance and achieve their goals.",
 };
+
 const page = () => {
   return <AboutUsPageComponent />;
 };
