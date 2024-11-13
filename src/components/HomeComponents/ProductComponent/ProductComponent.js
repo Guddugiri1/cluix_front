@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import product from "../../../../public/img/C012reagentkit1.jpg";
+import product from "../../../../public/img/reajent3.png";
 import { SubTitle } from "@/components/shared";
 import Link from "next/link";
 import React, { useState } from "react";

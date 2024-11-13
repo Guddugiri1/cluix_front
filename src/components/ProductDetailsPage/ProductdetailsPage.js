@@ -1,11 +1,11 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import product from "../../../public/img/C012reagentkit1.jpg";
+import product from "../../../public/img/reajent1.png";
 import prduct1 from "../../../public/product2.png";
 import prduct2 from "../../../public/product4.jpg";
-import prduct3 from "../../../public/img/C012reagentkit1.jpg";
-import prduct4 from "../../../public/img/C012reagentkit1.jpg";
+import prduct3 from "../../../public/img/reajent2.png";
+import prduct4 from "../../../public/img/reajent3.png";
 import prduct5 from "../../../public/img/C012-1.png";
 import prduct6 from "../../../public/img/C012-1.png";
 import prduct7 from "../../../public/img/C012.png";
