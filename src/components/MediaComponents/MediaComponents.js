@@ -1,8 +1,9 @@
 import React from "react";
 import img2 from "../../../public/news/img1.jpg";
 import img3 from "../../../public/news/img2.jpeg";
+import img4 from "../../../public/news/img2.jpg"; // Keep as img4
 import img6 from "../../../public/news/img2 (2).jpg";
-import img4 from "../../../public/news/img4.jpeg";
+import img4_2 from "../../../public/news/img4.jpeg"; // Rename to img4_2
 import img5 from "../../../public/news/img5.webp";
 import img7 from "../../../public/news.jpg";
 import Image from "next/image";
@@ -10,6 +11,8 @@ import Link from "next/link";
 import logo1 from "../../../public/news/logo1.png";
 import logo2 from "../../../public/news/logo2.png";
 import logo3 from "../../../public/news/logo3.png";
+import logo4 from "../../../public/news/media.png";
+
 import { MdOutlineWatchLater } from "react-icons/md";
 
 const MediaComponents = () => {
@@ -26,14 +29,21 @@ const MediaComponents = () => {
       name: "IIT कानपुर में ‘अभिव्यक्ति 2024’ का आगाज:देश भर के स्टार्टप्स ने दिखाई अपनी ताकत, छात्र भी देखकर हुए आश्चर्यचकित",
       image: img2,
       link: "https://www.bhaskar.com/local/uttar-pradesh/kanpur/news/water-testing-device-made-in-iit-kanpur-132759708.html?_branch_match_id=1302918748758516150&utm_campaign=132759708&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0nMzMvM1k3Sy8zTjyqwDE0MKDCy9EgCAItchA4fAAAA",
-      logo:logo3
+      logo: logo3,
     },
     {
       id: 2,
       name: "30 सेकेंड में मशीन बताएगी पानी की गुणवत्ता अब पानी की जांच के लिए महीनों तक रिपोर्ट का इंतजार करने की जरूरत नहीं हैं। एक बटन दबाते ही पानी की गुणवत्ता का पता चल सकेगा।",
       image: img6,
       link: "https://www.amarujala.com/uttar-pradesh/kanpur/technofest-abhivyakti-2024-vajra-will-identify-enemy-country-s-drone-and-jam-it-startups-exhibition-in-iit-2024-03-16?pageId=1",
-      logo:logo1
+      logo: logo1,
+    },
+    {
+      id: 2,
+      name: "CLUIX: Redefining Water Purity Through Cutting-edge Analyzer",
+      image: img4,
+      link: "https://theinterview.world/cluix-redefining-water-purity-through-cutting-edge-analyzer",
+      logo: logo4,
     },
   ];
 
@@ -57,7 +67,6 @@ const MediaComponents = () => {
             <div className="relative  ">
               <div className="">
                 <div className="flex flex-wrap justify-center -mx-4 mt-10 ">
-
                   <div
                     data-aos="fade-up"
                     className="grid mb-10 grid-cols-1 px-4 sm:px-10  lg:px-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 "
@@ -71,9 +80,7 @@ const MediaComponents = () => {
                         >
                           <Link
                             className="relative flex h-60 lg:h-[490px] overflow-hidden "
-                            href={
-                              data?.link
-                            }
+                            href={data?.link}
                           >
                             <Image
                               className="object-fill w-full bg-white  "
@@ -150,11 +157,7 @@ const MediaComponents = () => {
                   data-aos="fade-up"
                   className="w-full  sm:px-10     lg:px-16 mb-10   lg:mb-10"
                 >
-                  <div
-                    className=" xl:h-[500px] flex lg:justify-center flex-col xl:flex-row border shadow-md shadow-gray-400  gap-6 rounded-3xl w-full"
-
-
-                  >
+                  <div className=" xl:h-[500px] flex lg:justify-center flex-col xl:flex-row border shadow-md shadow-gray-400  gap-6 rounded-3xl w-full">
                     {/* <Image
                         data-aos="fade-up"
                         className="block w-full xl:max-w-[75%] rounded-3xl rounded-e-none "

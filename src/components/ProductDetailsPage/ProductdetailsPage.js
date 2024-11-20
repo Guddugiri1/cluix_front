@@ -1,18 +1,18 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import product from "../../../public/img/reajent1.png";
+import product from "../../../public/img/reajent3.png";
 import prduct1 from "../../../public/product2.png";
 import prduct2 from "../../../public/product4.jpg";
 import prduct3 from "../../../public/img/reajent2.png";
 import prduct4 from "../../../public/img/reajent3.png";
-import prduct5 from "../../../public/img/C012-1.png";
-import prduct6 from "../../../public/img/C012-1.png";
+import prduct5 from "../../../public/img/C012.png";
+import prduct6 from "../../../public/img/C0121.png";
 import prduct7 from "../../../public/img/C012.png";
-import prduct8 from "../../../public/img/C012-2.png";
-import prduct9 from "../../../public/product/product8.jpg";
-import prduct10 from "../../../public/product/product9.jpg";
-import prduct11 from "../../../public/product/product10.jpg";
+import prduct8 from "../../../public/img/C0121.png";
+import prduct9 from "../../../public/product/product8.png";
+import prduct10 from "../../../public/product/product9.png";
+import prduct11 from "../../../public/product/product10.png";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import AnimatedCard from "./AnimatedCard";
@@ -76,111 +76,111 @@ const ProductdetailsPage = ({ data }) => {
         },
       ],
       data: [
-        {
-          id: 1,
-          name: "Type/Nomenclature/Protection  ",
-          image: product,
-          details: [
-            {
-              id: 1,
-              label: "Type of Meter/Analyzer	",
-              value: "Hand-Held  ",
-            },
-            {
-              id: 2,
-              label: "Frequency of Calibration		",
-              value: "Pre-Calibrated      ",
-            },
-            {
-              id: 3,
-              label: "Ingress Protection		",
-              value: "IP 67      ",
-            },
-          ],
-        },
-        {
-          id: 2,
-          name: "Measurement of Starch      ",
-          image: product,
-          details: [
-            {
-              id: 1,
-              label: "Technology/Method/Principle of Measurement of Starch		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 2,
-              label: "Reagents used in Measurement of Starch	",
-              value: "NA ",
-            },
-            {
-              id: 3,
-              label: "Starch Measurement Range ( In mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 4,
-              label: "Starch Resolution (IN mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 5,
-              label: "Starch Accuracy ( +/- ) ( In %)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 6,
-              label:
-                "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
-              value: "NA           ",
-            },
-          ],
-        },
-        {
-          id: 3,
-          name: "Application and Approval  ",
-          image: product,
-          details: [
-            {
-              id: 1,
-              label: "Intended Application	",
-              value:
-                "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments          ",
-            },
-            {
-              id: 2,
-              label:
-                "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
-              value:
-                "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
-            },
-          ],
-        },
-        {
-          id: 4,
-          name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
-          image: product,
-          details: [
-            {
-              id: 1,
-              label: "Measured Water Quality Parameters	",
-              value:
-                "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
-            },
-            {
-              id: 2,
-              label: "Detected Water Quality Parameters			",
-              value: "NA",
-            },
-          ],
-        },
+        // {
+        //   id: 1,
+        //   name: "Type/Nomenclature/Protection  ",
+        //   image: product,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Type of Meter/Analyzer	",
+        //       value: "Hand-Held  ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Frequency of Calibration		",
+        //       value: "Pre-Calibrated      ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Ingress Protection		",
+        //       value: "IP 67      ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 2,
+        //   name: "Measurement of Starch      ",
+        //   image: product,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Technology/Method/Principle of Measurement of Starch		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Reagents used in Measurement of Starch	",
+        //       value: "NA ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Starch Measurement Range ( In mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 4,
+        //       label: "Starch Resolution (IN mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 5,
+        //       label: "Starch Accuracy ( +/- ) ( In %)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 6,
+        //       label:
+        //         "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
+        //       value: "NA           ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 3,
+        //   name: "Application and Approval  ",
+        //   image: product,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Intended Application	",
+        //       value:
+        //         "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label:
+        //         "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
+        //       value:
+        //         "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 4,
+        //   name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
+        //   image: product,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Measured Water Quality Parameters	",
+        //       value:
+        //         "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Detected Water Quality Parameters			",
+        //       value: "NA",
+        //     },
+        //   ],
+        // },
       ],
       image: product,
     },
     {
       id: 2,
       name: "C012",
-      price: "₹ 68,500.00",
+      price: "₹ 79,698.82",
       title:
         "CLUIX-C012 Hand-Held Digital Water Quality Testers/Analyzers With Warranty Of 2024",
       productDetails: {
@@ -209,104 +209,104 @@ const ProductdetailsPage = ({ data }) => {
         },
       ],
       data: [
-        {
-          id: 1,
-          name: "Type/Nomenclature/Protection  ",
-          image: product1,
-          details: [
-            {
-              id: 1,
-              label: "Type of Meter/Analyzer	",
-              value: "Hand-Held  ",
-            },
-            {
-              id: 2,
-              label: "Frequency of Calibration		",
-              value: "Pre-Calibrated      ",
-            },
-            {
-              id: 3,
-              label: "Ingress Protection		",
-              value: "IP 67      ",
-            },
-          ],
-        },
-        {
-          id: 2,
-          name: "Measurement of Starch      ",
-          image: product1,
-          details: [
-            {
-              id: 1,
-              label: "Technology/Method/Principle of Measurement of Starch		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 2,
-              label: "Reagents used in Measurement of Starch	",
-              value: "NA ",
-            },
-            {
-              id: 3,
-              label: "Starch Measurement Range ( In mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 4,
-              label: "Starch Resolution (IN mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 5,
-              label: "Starch Accuracy ( +/- ) ( In %)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 6,
-              label:
-                "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
-              value: "NA           ",
-            },
-          ],
-        },
-        {
-          id: 3,
-          name: "Application and Approval  ",
-          image: product1,
-          details: [
-            {
-              id: 1,
-              label: "Intended Application	",
-              value:
-                "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments          ",
-            },
-            {
-              id: 2,
-              label:
-                "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
-              value:
-                "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
-            },
-          ],
-        },
-        {
-          id: 4,
-          name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
-          image: product1,
-          details: [
-            {
-              id: 1,
-              label: "Measured Water Quality Parameters	",
-              value:
-                "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
-            },
-            {
-              id: 2,
-              label: "Detected Water Quality Parameters			",
-              value: "NA",
-            },
-          ],
-        },
+        // {
+        //   id: 1,
+        //   name: "Type/Nomenclature/Protection  ",
+        //   image: product1,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Type of Meter/Analyzer	",
+        //       value: "Hand-Held  ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Frequency of Calibration		",
+        //       value: "Pre-Calibrated      ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Ingress Protection		",
+        //       value: "IP 67      ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 2,
+        //   name: "Measurement of Starch      ",
+        //   image: product1,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Technology/Method/Principle of Measurement of Starch		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Reagents used in Measurement of Starch	",
+        //       value: "NA ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Starch Measurement Range ( In mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 4,
+        //       label: "Starch Resolution (IN mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 5,
+        //       label: "Starch Accuracy ( +/- ) ( In %)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 6,
+        //       label:
+        //         "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
+        //       value: "NA           ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 3,
+        //   name: "Application and Approval  ",
+        //   image: product1,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Intended Application :",
+        //       value:
+        //         "To ensure compliance with the stringent water quality standards outlined in the Uniform Drinking Water Quality Protocol 2019 and BIS 10500:2012, this device accurately tests and analyzes crucial water parameters.",
+        //     },
+        //     {
+        //       id: 2,
+        //       label:
+        //         "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
+        //       value:
+        //         "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 4,
+        //   name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
+        //   image: product1,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Measured Water Quality Parameters	",
+        //       value:
+        //         "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Detected Water Quality Parameters			",
+        //       value: "NA",
+        //     },
+        //   ],
+        // },
       ],
       image: product1,
     },
@@ -360,104 +360,104 @@ const ProductdetailsPage = ({ data }) => {
         },
       ],
       data: [
-        {
-          id: 1,
-          name: "Type/Nomenclature/Protection  ",
-          image: prduct9,
-          details: [
-            {
-              id: 1,
-              label: "Type of Meter/Analyzer	",
-              value: "Hand-Held  ",
-            },
-            {
-              id: 2,
-              label: "Frequency of Calibration		",
-              value: "Pre-Calibrated      ",
-            },
-            {
-              id: 3,
-              label: "Ingress Protection		",
-              value: "IP 67      ",
-            },
-          ],
-        },
-        {
-          id: 2,
-          name: "Measurement of Starch      ",
-          image: prduct10,
-          details: [
-            {
-              id: 1,
-              label: "Technology/Method/Principle of Measurement of Starch		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 2,
-              label: "Reagents used in Measurement of Starch	",
-              value: "NA ",
-            },
-            {
-              id: 3,
-              label: "Starch Measurement Range ( In mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 4,
-              label: "Starch Resolution (IN mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 5,
-              label: "Starch Accuracy ( +/- ) ( In %)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 6,
-              label:
-                "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
-              value: "NA           ",
-            },
-          ],
-        },
-        {
-          id: 3,
-          name: "Application and Approval  ",
-          image: prduct11,
-          details: [
-            {
-              id: 1,
-              label: "Intended Application	",
-              value:
-                "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments          ",
-            },
-            {
-              id: 2,
-              label:
-                "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
-              value:
-                "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
-            },
-          ],
-        },
-        {
-          id: 4,
-          name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
-          image: prduct10,
-          details: [
-            {
-              id: 1,
-              label: "Measured Water Quality Parameters	",
-              value:
-                "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
-            },
-            {
-              id: 2,
-              label: "Detected Water Quality Parameters			",
-              value: "NA",
-            },
-          ],
-        },
+        // {
+        //   id: 1,
+        //   name: "Type/Nomenclature/Protection  ",
+        //   image: prduct9,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Type of Meter/Analyzer	",
+        //       value: "Hand-Held  ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Frequency of Calibration		",
+        //       value: "Pre-Calibrated      ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Ingress Protection		",
+        //       value: "IP 67      ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 2,
+        //   name: "Measurement of Starch      ",
+        //   image: prduct10,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Technology/Method/Principle of Measurement of Starch		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Reagents used in Measurement of Starch	",
+        //       value: "NA ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Starch Measurement Range ( In mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 4,
+        //       label: "Starch Resolution (IN mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 5,
+        //       label: "Starch Accuracy ( +/- ) ( In %)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 6,
+        //       label:
+        //         "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
+        //       value: "NA           ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 3,
+        //   name: "Application and Approval  ",
+        //   image: prduct11,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Intended Application	",
+        //       value:
+        //         "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label:
+        //         "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
+        //       value:
+        //         "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 4,
+        //   name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
+        //   image: prduct10,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Measured Water Quality Parameters	",
+        //       value:
+        //         "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Detected Water Quality Parameters			",
+        //       value: "NA",
+        //     },
+        //   ],
+        // },
       ],
       image: product1,
     },
@@ -511,104 +511,104 @@ const ProductdetailsPage = ({ data }) => {
         },
       ],
       data: [
-        {
-          id: 1,
-          name: "Type/Nomenclature/Protection  ",
-          image: product4,
-          details: [
-            {
-              id: 1,
-              label: "Type of Meter/Analyzer	",
-              value: "Hand-Held  ",
-            },
-            {
-              id: 2,
-              label: "Frequency of Calibration		",
-              value: "Pre-Calibrated      ",
-            },
-            {
-              id: 3,
-              label: "Ingress Protection		",
-              value: "IP 67      ",
-            },
-          ],
-        },
-        {
-          id: 2,
-          name: "Measurement of Starch      ",
-          image: product4,
-          details: [
-            {
-              id: 1,
-              label: "Technology/Method/Principle of Measurement of Starch		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 2,
-              label: "Reagents used in Measurement of Starch	",
-              value: "NA ",
-            },
-            {
-              id: 3,
-              label: "Starch Measurement Range ( In mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 4,
-              label: "Starch Resolution (IN mg/L or ppm)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 5,
-              label: "Starch Accuracy ( +/- ) ( In %)		",
-              value: "NA ( Starch Measurement Not Offered)          ",
-            },
-            {
-              id: 6,
-              label:
-                "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
-              value: "NA           ",
-            },
-          ],
-        },
-        {
-          id: 3,
-          name: "Application and Approval  ",
-          image: product4,
-          details: [
-            {
-              id: 1,
-              label: "Intended Application	",
-              value:
-                "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments          ",
-            },
-            {
-              id: 2,
-              label:
-                "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
-              value:
-                "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
-            },
-          ],
-        },
-        {
-          id: 4,
-          name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
-          image: product4,
-          details: [
-            {
-              id: 1,
-              label: "Measured Water Quality Parameters	",
-              value:
-                "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
-            },
-            {
-              id: 2,
-              label: "Detected Water Quality Parameters			",
-              value: "NA",
-            },
-          ],
-        },
+        // {
+        //   id: 1,
+        //   name: "Type/Nomenclature/Protection  ",
+        //   image: product4,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Type of Meter/Analyzer	",
+        //       value: "Hand-Held  ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Frequency of Calibration		",
+        //       value: "Pre-Calibrated      ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Ingress Protection		",
+        //       value: "IP 67      ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 2,
+        //   name: "Measurement of Starch      ",
+        //   image: product4,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Technology/Method/Principle of Measurement of Starch		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Reagents used in Measurement of Starch	",
+        //       value: "NA ",
+        //     },
+        //     {
+        //       id: 3,
+        //       label: "Starch Measurement Range ( In mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 4,
+        //       label: "Starch Resolution (IN mg/L or ppm)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 5,
+        //       label: "Starch Accuracy ( +/- ) ( In %)		",
+        //       value: "NA ( Starch Measurement Not Offered)          ",
+        //     },
+        //     {
+        //       id: 6,
+        //       label:
+        //         "Quantity of Tests ( in Measurement of Starch) for which reagents are provided	",
+        //       value: "NA           ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 3,
+        //   name: "Application and Approval  ",
+        //   image: product4,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Intended Application	",
+        //       value:
+        //         "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label:
+        //         "Approvals ( Hint: Buyer shall ensure/verify valid approvals before accepting the stocks)	",
+        //       value:
+        //         "Having Approval From Jal Jeevan Mission Approved Laboratory to prove conformity to the specifications          ",
+        //     },
+        //   ],
+        // },
+        // {
+        //   id: 4,
+        //   name: "MEASURED & DETECTED WATER QUALITY PARAMETERS      ",
+        //   image: product4,
+        //   details: [
+        //     {
+        //       id: 1,
+        //       label: "Measured Water Quality Parameters	",
+        //       value:
+        //         "Potential of hydrogen (pH),Total dissolved solids (TDS),Turbidity,Color,Free Residual Chlorine,Total Hardness,Electrical Conductivity,Lead          ",
+        //     },
+        //     {
+        //       id: 2,
+        //       label: "Detected Water Quality Parameters			",
+        //       value: "NA",
+        //     },
+        //   ],
+        // },
       ],
       image: product4,
     },
@@ -921,11 +921,14 @@ const ProductdetailsPage = ({ data }) => {
                       <div className="add-to-cart-price mt-4">
                         <ProductDescrition
                           lable={"Our Price: "}
-                          text={`₹ ${item?.price}`}
+                          text={`₹ 64,999.00`}
                         />
 
                         <ProductDescrition lable={"Discount :"} text={"10%"} />
-                        <ProductDescrition lable={"You Save :"} text={"₹0"} />
+                        <ProductDescrition
+                          lable={"You Save :"}
+                          text={"₹6,499"}
+                        />
 
                         <ProductDescrition
                           lable={" Price For :"}
@@ -933,12 +936,17 @@ const ProductdetailsPage = ({ data }) => {
                         />
                         <ProductDescrition
                           lable={" MRP/Unit :"}
-                          text={`₹ ${item?.price}`}
+                          text={`₹79,698.00`}
                         />
                         <ProductDescrition
                           lable={" Offer Price/Unit :"}
-                          text={`₹ ${item?.price}`}
+                          text={`₹64,999.00`}
                         />
+                        <ProductDescrition
+                          lable={" GST (18%) :"}
+                          text={"₹11,699.82"}
+                        />
+
                         {item.id != "3" && item.id != "4" ? (
                           <>
                             <ProductDescrition
@@ -948,7 +956,7 @@ const ProductdetailsPage = ({ data }) => {
                             <ProductDescrition
                               lable={"Product Description :"}
                               text={
-                                "The Uniform Drinking Water Quality Protocol, 2019 has specified some important parameters to be monitored for assuring potability of drinking water as per BIS IS 10500:2012 (Second Version) and subsequent amendments Digital Water Quality Testers/Anal"
+                                "Ensure the purity of your water with our C012 Digital Water Quality Analyzer. This compact and user-friendly device measures essential water quality parameters, aligning with stringent national and international standards. Ideal for professional use, the C012 provides accurate and reliable results, empowering you to make informed decisions about water quality."
                               }
                             />
                             <ProductDescrition
@@ -984,11 +992,18 @@ const ProductdetailsPage = ({ data }) => {
                                 }
                               />
                               <ProductDescrition
-                                lable={"Total Parameters: 12 "}
+                                lable={"Total Parameters 12: "}
                                 text={
-                                  " Free Residual Chlorine (FRC) - 100 test, ⁠Potential of Hydrogen (pH) - 10 test ⁠Total Hardness (TH) - 100 test, ⁠Total Dissolved Solid (TDS), - Unlimited (Reagent not required), Turbidity (TUR) - 100 test, ⁠Lead (Pb) - 100 test,  ⁠Iron (Fe) - 100 test, ⁠Fluoride (F) - 100 test,  ⁠Nitrate (NO3) - 100 test,  ⁠Copper (Cu) - 100 test,  Total ⁠Alkalinity - 100 test, ⁠Electrical Conductivity - Unlimited (Reagent not required)"
+                                  " Free Residual Chlorine (FRC),  Potential of Hydrogen (pH), Total Hardness (TH), Total Dissolved Solids (TDS)(Reagent-free), Turbidity (TUR), Lead (Pb), Iron (Fe), Fluoride (F), Nitrate (NO3), Copper (Cu), Total Alkalinity, Electrical Conductivity (Reagent-free)."
                                 }
                               />
+                              <ProductDescrition
+                                // lable={"Total Parameters 12: "}
+                                text={
+                                  "Each parameter, except TDS and Electrical Conductivity, comes with 100 test strips."
+                                }
+                              />
+
                               <ProductDescrition
                                 lable={"Measured Water Quality Parameters : "}
                                 text={

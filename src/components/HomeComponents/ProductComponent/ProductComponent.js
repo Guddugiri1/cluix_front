@@ -8,8 +8,8 @@ import { Button, Modal } from "antd";
 import { usePathname, useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa";
 import ViewMore from "@/components/shared/typography/ViewMore";
-import product1 from "../../../../public/img/C012.png";
-import product2 from "../../../../public/product2.png";
+import product1 from "../../../../public/img/C0121.png";
+import product2 from "../../../../public/product/product8.png";
 import product4 from "../../../../public/product4.jpg";
 
 const ProductComponent = () => {
@@ -31,7 +31,7 @@ const ProductComponent = () => {
     {
       id: 2,
       name: "CLUIX C012",
-      price: "68,500.00 + GST",
+      price: "76,698.82 + GST",
       image: product1,
       morebtn: (
         <>
@@ -108,7 +108,7 @@ const ProductComponent = () => {
     {
       id: 2,
       name: "CLUIX C012",
-      price: "68,500.00 + GST",
+      price: "76,698.82 + GST",
       image: product1,
       morebtn: (
         <>
