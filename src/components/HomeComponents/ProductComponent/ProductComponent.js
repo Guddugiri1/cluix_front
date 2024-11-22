@@ -46,7 +46,7 @@ const ProductComponent = () => {
     {
       id: 1,
       name: "Reagent Kit(100 Test)",
-      price: "15,000.00 + GST",
+      price: "19,470.00 + GST",
       image: product,
       morebtn: (
         <>
@@ -63,26 +63,26 @@ const ProductComponent = () => {
         </>
       ),
     },
-    {
-      id: 3,
-      name: "Inline TDS Meter",
-      price: "1200.00 + GST",
-      image: product2,
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/3`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
-      btn: (
-        <>
-          <div onClick={showModal}>Add to cart</div>
-        </>
-      ),
-    },
+    // {
+    //   id: 3,
+    //   name: "Inline TDS Meter",
+    //   price: "1200.00 + GST",
+    //   image: product2,
+    //   morebtn: (
+    //     <>
+    //       <div>
+    //         <Link className="text-black hover:text-black" href={`/product/3`}>
+    //           View More
+    //         </Link>
+    //       </div>
+    //     </>
+    //   ),
+    //   btn: (
+    //     <>
+    //       <div onClick={showModal}>Add to cart</div>
+    //     </>
+    //   ),
+    // },
     {
       id: 4,
       name: "“Varunaa” water level monitoring system",
@@ -142,25 +142,45 @@ const ProductComponent = () => {
       ),
     },
     {
-      id: 3,
-      name: "Inline TDS Meter",
-      price: "1200.00 + GST",
-      image: product2,
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/3`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
+      id: 4,
+      name: "“Varunaa” water level monitoring system",
+      price: "Coming Soon...",
+      image: product4,
       btn: (
         <>
           <div onClick={showModal}>Add to cart</div>
         </>
       ),
+      morebtn: (
+        <>
+          <div>
+            <Link className="text-black hover:text-black" href={`/product/4`}>
+              View More
+            </Link>
+          </div>
+        </>
+      ),
     },
+    // {
+    //   id: 3,
+    //   name: "Inline TDS Meter",
+    //   price: "1200.00 + GST",
+    //   image: product2,
+    //   morebtn: (
+    //     <>
+    //       <div>
+    //         <Link className="text-black hover:text-black" href={`/product/3`}>
+    //           View More
+    //         </Link>
+    //       </div>
+    //     </>
+    //   ),
+    //   btn: (
+    //     <>
+    //       <div onClick={showModal}>Add to cart</div>
+    //     </>
+    //   ),
+    // },
   ];
   console.log("pathname", pathname);
 

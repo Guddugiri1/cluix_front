@@ -48,7 +48,7 @@ const ProductdetailsPage = ({ data }) => {
     {
       id: 1,
       name: "Reagent Kit(100 Test)",
-      price: "₹ 15,000.00",
+      price: "₹ 19,470.00",
       title: "Reagent Kit(100 Test)",
       productDetails: {
         quantity: "1",
@@ -920,37 +920,19 @@ const ProductdetailsPage = ({ data }) => {
                       data-ext-type="Digital Water Quality Testers/Analyzers (Jal Jeevan Mission)"
                     >
                       <div className="add-to-cart-price mt-4">
-                        <ProductDescrition
-                          lable={"MRP: "}
-                          text={`₹ 76,227.00`}
-                        />
-
-                        {/* <ProductDescrition lable={"Discount :"} text={"10%"} /> */}
-                        {/* <ProductDescrition
-                          lable={"You Save :"}
-                          text={"₹6,499"}
-                        /> */}
-
-                        <ProductDescrition
+                        {/* changes by Nitish  */}
+                      {item.id == 2 && (
+                          <>
+                            <ProductDescrition
+                            lable={"MRP: "}
+                            text={`₹ 76,227.00`}
+                          />
+                          <ProductDescrition
                           lable={" Price For :"}
                           text={"1 set"}
                         />
-                        {/* <ProductDescrition
-                          lable={" MRP/Unit :"}
-                          text={`₹79,698.00`}
-                        /> */}
-                        {/* <ProductDescrition
-                          lable={" Offer Price/Unit :"}
-                          text={`₹64,999.00`}
-                        /> */}
-                        {/* <ProductDescrition
-                          lable={" GST (18%) :"}
-                          text={"₹11,699.82"}
-                        /> */}
 
-                        {item.id != "3" && item.id != "4" ? (
-                          <>
-                            <ProductDescrition
+<ProductDescrition
                               lable={"Product id :"}
                               text={"5116877-98681873194"}
                             />
@@ -964,14 +946,8 @@ const ProductdetailsPage = ({ data }) => {
                               lable={"Country Of Origin :"}
                               text={" India"}
                             />
-                          </>
-                        ) : (
-                          ""
-                        )}
-                      </div>
 
-                      {item.id !== 3 && item.id !== 4 ? (
-                        <div className="sub-section specifications">
+<div className="sub-section specifications">
                           <TitleProductDetails>
                             Specifications
                           </TitleProductDetails>
@@ -1005,12 +981,12 @@ const ProductdetailsPage = ({ data }) => {
                                 }
                               />
 
-                              <ProductDescrition
+                              {/* <ProductDescrition
                                 lable={"Measured Water Quality Parameters : "}
                                 text={
                                   " Potential of hydrogen (pH) ,Total dissolved solids (TDS) ,Turbidity ,Color ,Free Residual Chlorine ,Total Hardness ,Electrical Conductivity ,Lead"
                                 }
-                              />
+                              /> */}
                               <ProductDescrition
                                 lable={"What is in the box : "}
                                 text={
@@ -1030,9 +1006,201 @@ const ProductdetailsPage = ({ data }) => {
                             </div>
                           </div>
                         </div>
+
+                          </>
+                          
+                      )}
+                      {item.id == 1 && (
+                          <>
+                              <ProductDescrition
+                              lable={"MRP: "}
+                              text={`₹ 19,470.00`}
+                              />
+                              <ProductDescrition
+                              lable={" Price For :"}
+                              text={"1 kit"}
+                              />
+
+<ProductDescrition
+                              lable={"Product id :"}
+                              text={"5116877-98681873194"}
+                            />
+                            <ProductDescrition
+                              lable={"Product Description :"}
+                              text={
+                                "The C012 Water Quality Test Kit provides accurate and reliable testing for key water parameters. Designed to meet stringent quality standards, this kit offers a simple and efficient solution for monitoring water quality."
+                              }
+                            />
+                            <ProductDescrition
+                              lable={"Country Of Origin :"}
+                              text={" India"}
+                            />
+
+<div className="sub-section specifications">
+
+                          <div
+                            id="golden-parameters"
+                            className="golden-parameters collapsible mt-4"
+                            style={{ maxHeight: "none" }}
+                          >
+                            <div className="golden-params-container">
+                              <ProductDescrition
+                                lable={"Key Features : "}
+                                // text={" Hand-Held"}
+                              />
+                              <ProductDescrition
+                                lable={"Comprehensive Testing : "}
+                                text={
+                                  "Covers a range of essential parameters, including pH, TDS, conductivity, turbidity, chlorine, and more."
+                                }
+                              />
+                              <ProductDescrition
+                                lable={"Easy-to-Use: "}
+                                text={
+                                  "User-friendly design and clear instructions for hassle-free testing."
+                                }
+                              />
+                              <ProductDescrition
+                                lable={"Accurate Results: "}
+                                text={
+                                  "Precise measurements and reliable results."
+                                }
+                              />
+
+                              <ProductDescrition
+                                lable={"Portable and Compact : "}
+                                text={
+                                  "Ideal for on-site and field testing."
+                                }
+                              />
+                              <ProductDescrition
+                                lable={"Kit Includes : "}
+                                text={
+                                  "Reagent for various parameters, Detailed instructions"
+                                }
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        
+                          </>
+                      )}
+                      {item.id ===4 && (
+                        <ProductDescrition
+                        // lable={"MRP: "}
+                        text={`Not Found`}
+                        />
+                      )}
+                        
+
+                        {/* <ProductDescrition lable={"Discount :"} text={"10%"} /> */}
+                        {/* <ProductDescrition
+                          lable={"You Save :"}
+                          text={"₹6,499"}
+                        /> */}
+
+                        {/* <ProductDescrition
+                          lable={" Price For :"}
+                          text={"1 set"}
+                        /> */}
+                        {/* <ProductDescrition
+                          lable={" MRP/Unit :"}
+                          text={`₹79,698.00`}
+                        /> */}
+                        {/* <ProductDescrition
+                          lable={" Offer Price/Unit :"}
+                          text={`₹64,999.00`}
+                        /> */}
+                        {/* <ProductDescrition
+                          lable={" GST (18%) :"}
+                          text={"₹11,699.82"}
+                        /> */}
+
+                        {/* {item.id != "3" && item.id != "4" ? (
+                          <>
+                            <ProductDescrition
+                              lable={"Product id :"}
+                              text={"5116877-98681873194"}
+                            />
+                            <ProductDescrition
+                              lable={"Product Description :"}
+                              text={
+                                "Ensure the purity of your water with our C012 Digital Water Quality Analyzer. This compact and user-friendly device measures essential water quality parameters, aligning with stringent national and international standards. Ideal for professional use, the C012 provides accurate and reliable results, empowering you to make informed decisions about water quality."
+                              }
+                            />
+                            <ProductDescrition
+                              lable={"Country Of Origin :"}
+                              text={" India"}
+                            />
+                          </>
+                        ) : (
+                          ""
+                        )} */}
+                      </div>
+
+                      {item.id !== 3 && item.id !== 4 ? (
+                        <div className="sub-section specifications">
+                          {/* <TitleProductDetails>
+                            Specifications
+                          </TitleProductDetails> */}
+
+                          {/* <div
+                            id="golden-parameters"
+                            className="golden-parameters collapsible mt-4"
+                            style={{ maxHeight: "none" }}
+                          >
+                            <div className="golden-params-container">
+                              <ProductDescrition
+                                lable={"Type of Meter/Analyzer : "}
+                                text={" Hand-Held"}
+                              />
+                              <ProductDescrition
+                                lable={"Intended Application : "}
+                                text={
+                                  "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments"
+                                }
+                              />
+                              <ProductDescrition
+                                lable={"Total Parameters 12: "}
+                                text={
+                                  " Free Residual Chlorine (FRC),  Potential of Hydrogen (pH), Total Hardness (TH), Total Dissolved Solids (TDS)(Reagent-free), Turbidity (TUR), Lead (Pb), Iron (Fe), Fluoride (F), Nitrate (NO3), Copper (Cu), Total Alkalinity, Electrical Conductivity (Reagent-free)."
+                                }
+                              />
+                              <ProductDescrition
+                                // lable={"Total Parameters 12: "}
+                                text={
+                                  "Each parameter, except TDS and Electrical Conductivity, comes with 100 test strips."
+                                }
+                              /> */}
+
+                              {/* <ProductDescrition
+                                lable={"Measured Water Quality Parameters : "}
+                                text={
+                                  " Potential of hydrogen (pH) ,Total dissolved solids (TDS) ,Turbidity ,Color ,Free Residual Chlorine ,Total Hardness ,Electrical Conductivity ,Lead"
+                                }
+                              /> */}
+                              {/* <ProductDescrition
+                                lable={"What is in the box : "}
+                                text={
+                                  "Reagent kit box, Carrying case/bag included in the scope of the supply, User manual,  Type C USB Cable, TDS Probe Only"
+                                }
+                              />
+                              <ProductDescrition
+                                lable={"Warranty on Equipment (Year) : "}
+                                text={"1"}
+                              />
+                              <ProductDescrition
+                                lable={
+                                  "Warranty on Cables for Connecting Probe (Year) : "
+                                }
+                                text={"1"}
+                              />
+                            </div> */}
+                          {/* </div> */}
+                        </div>
                       ) : (
                         <div className="sub-section specifications">
-                          <TitleProductDetails>
+                          {/* <TitleProductDetails>
                             {item?.benifit?.title}
                           </TitleProductDetails>
 
@@ -1050,11 +1218,13 @@ const ProductdetailsPage = ({ data }) => {
                                 />
                               ))}
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       )}
                     </div>
                   </div>
+
+
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-10  ">
