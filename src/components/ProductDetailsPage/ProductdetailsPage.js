@@ -180,7 +180,7 @@ const ProductdetailsPage = ({ data }) => {
     {
       id: 2,
       name: "C012",
-      price: "₹ 79,698.82",
+      price: "₹ 76,227.00",
       title:
         "CLUIX-C012 Hand-Held Digital Water Quality Testers/Analyzers With Warranty Of 2024",
       productDetails: {
@@ -663,9 +663,9 @@ const ProductdetailsPage = ({ data }) => {
               value: "IP 67      ",
             },
           ],
-        },
+        }, 
         {
-          id: 2,
+          id: 2, 
           name: "Measurement of Starch      ",
           details: [
             {
@@ -898,6 +898,7 @@ const ProductdetailsPage = ({ data }) => {
                       <strike>{item?.price}</strike>
                     </p>
                   </div>
+                    <p>Inclusive of all taxes</p>
 
                   <div className="flex flex-wrap gap-4 mt-8">
                     <Link href={"https://mydukaan.io/cluix1"}>
@@ -920,32 +921,32 @@ const ProductdetailsPage = ({ data }) => {
                     >
                       <div className="add-to-cart-price mt-4">
                         <ProductDescrition
-                          lable={"Our Price: "}
-                          text={`₹ 64,999.00`}
+                          lable={"MRP: "}
+                          text={`₹ 76,227.00`}
                         />
 
-                        <ProductDescrition lable={"Discount :"} text={"10%"} />
-                        <ProductDescrition
+                        {/* <ProductDescrition lable={"Discount :"} text={"10%"} /> */}
+                        {/* <ProductDescrition
                           lable={"You Save :"}
                           text={"₹6,499"}
-                        />
+                        /> */}
 
                         <ProductDescrition
                           lable={" Price For :"}
-                          text={"1 pieces"}
+                          text={"1 set"}
                         />
-                        <ProductDescrition
+                        {/* <ProductDescrition
                           lable={" MRP/Unit :"}
                           text={`₹79,698.00`}
-                        />
-                        <ProductDescrition
+                        /> */}
+                        {/* <ProductDescrition
                           lable={" Offer Price/Unit :"}
                           text={`₹64,999.00`}
-                        />
-                        <ProductDescrition
+                        /> */}
+                        {/* <ProductDescrition
                           lable={" GST (18%) :"}
                           text={"₹11,699.82"}
-                        />
+                        /> */}
 
                         {item.id != "3" && item.id != "4" ? (
                           <>
@@ -1011,9 +1012,9 @@ const ProductdetailsPage = ({ data }) => {
                                 }
                               />
                               <ProductDescrition
-                                lable={"Accessories : "}
+                                lable={"What is in the box : "}
                                 text={
-                                  "  Carrying case/bag included in the scope of the supply ,Guided  graphical user instruction for each test ,AC/DC Charger ,Type C USB Cable ,TDS Probe Only"
+                                  "Reagent kit box, Carrying case/bag included in the scope of the supply, User manual,  Type C USB Cable, TDS Probe Only"
                                 }
                               />
                               <ProductDescrition

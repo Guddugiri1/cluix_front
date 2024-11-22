@@ -31,7 +31,7 @@ const ProductComponent = () => {
     {
       id: 2,
       name: "CLUIX C012",
-      price: "76,698.82 + GST",
+      price: "76,227.00 + GST",
       image: product1,
       morebtn: (
         <>
@@ -108,7 +108,7 @@ const ProductComponent = () => {
     {
       id: 2,
       name: "CLUIX C012",
-      price: "76,698.82 + GST",
+      price: "76,227.00 + GST",
       image: product1,
       morebtn: (
         <>
