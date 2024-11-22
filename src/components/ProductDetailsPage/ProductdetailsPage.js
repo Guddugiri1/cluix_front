@@ -52,7 +52,7 @@ const ProductdetailsPage = ({ data }) => {
       title: "Reagent Kit(100 Test)",
       productDetails: {
         quantity: "1",
-        price: "15,000.00",
+        price: "19,470.00",
         availability: " 10 In Stock",
         minOrder: 1,
       },

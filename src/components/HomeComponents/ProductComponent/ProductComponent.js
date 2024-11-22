@@ -123,7 +123,7 @@ const ProductComponent = () => {
     {
       id: 1,
       name: "Reagent Kit(100 Test)",
-      price: "15,000.00 + GST",
+      price: "19,470.00 + GST",
       image: product,
 
       morebtn: (
