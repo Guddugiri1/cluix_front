@@ -58,12 +58,12 @@ const FooterComponents = () => {
       link: "/refunds ",
       name: "Return & Refund Policy",
     },
-   
+
     {
       id: "4",
       link: "/shipping-policy",
       name: "⁠Shipping policies",
-    }
+    },
   ];
   const resource = [
     {
@@ -97,8 +97,6 @@ const FooterComponents = () => {
       className={`flex flex-col gap-3  items-center bg-[var(--black-bg)]  text-center text-white`}
     >
       <div className="container px-6 pt-6">
-
-
         {/* Newsletter sign-up form */}
         <div className=" my-4">
           <fieldset>
@@ -151,14 +149,18 @@ const FooterComponents = () => {
 
               <ul className="mb-0 list-none flex gap-4  flex-col ">
                 <li>
-                  <a href="https://maps.app.goo.gl/r9urEhiWUjTvVTeWA" className="text-white">
+                  <a
+                    href="https://maps.app.goo.gl/r9urEhiWUjTvVTeWA"
+                    className="text-white"
+                  >
                     <div className=" flex items-start ">
                       <span className="pt-1">
                         <IoLocationSharp className={`h-6 w-6 fill-white `} />
                       </span>
                       <span className="px-5 text-left ">
-                        Lab - 2, 4th Floor, Synergy Building, IIT Delhi Campus,
-                        Hauz Khas, New Delhi (110016)
+                        Lab-4C-1D, 4th Floor, C Block, Research & Innovation
+                        Park, IIT Delhi Campus, Hauz Khas, South Delhi, Delhi -
+                        (110016)
                       </span>
                     </div>
                   </a>
@@ -176,7 +178,6 @@ const FooterComponents = () => {
 
                         <p className="px-2  ">
                           <a href="tel:+919485883388">+91 9485883388</a>
-
                         </p>
                       </div>
                     </div>
@@ -237,7 +238,7 @@ const FooterComponents = () => {
           </div>
           <div className="mb-6">
             <h5 className="mb-6 font-semibold text-lg text-start  lg:px-10">
-            Customer Services
+              Customer Services
             </h5>
 
             <ul className="mb-0 list-none flex gap-4  flex-col items-start lg:px-10">
@@ -254,11 +255,13 @@ const FooterComponents = () => {
               })}
             </ul>
           </div>
-         
         </div>
       </div>
       {/* Copyright section */}
-      <div className="flex px-4 xl:px-28 flex-col xl:flex-row justify-between items-center w-full " style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }} >
+      <div
+        className="flex px-4 xl:px-28 flex-col xl:flex-row justify-between items-center w-full "
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+      >
         <div className=" pt-3 items-center flex justify-center gap-5">
           {/* Add your social media icon SVG here */}
           <div>
@@ -287,18 +290,18 @@ const FooterComponents = () => {
               <FaSquareInstagram className=" h-6 w-6 fill-white" />
             </a>
           </div>
-
           <p className="">
-            <a className=" lg:pl-10 pt-3 xl:pt-1 sm:text-nowrap text-white px-3" target="_blank" href="https://www.google.com/search?q=cluix&rlz=1C5CHFA_enIN966IN966&oq=cluix+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDwyBggDEEUYPDIGCAQQRRg90gEJNzMwMGowajE1qAIIsAIB&sourceid=chrome&ie=UTF-8#lrd=0x390d1df6fda50d99:0x3f25886e2530b5eb,1">
+            <a
+              className=" lg:pl-10 pt-3 xl:pt-1 sm:text-nowrap text-white px-3"
+              target="_blank"
+              href="https://www.google.com/search?q=cluix&rlz=1C5CHFA_enIN966IN966&oq=cluix+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDwyBggDEEUYPDIGCAQQRRg90gEJNzMwMGowajE1qAIIsAIB&sourceid=chrome&ie=UTF-8#lrd=0x390d1df6fda50d99:0x3f25886e2530b5eb,1"
+            >
               Rate Us on Google
             </a>
           </p>
           {/* Repeat the above anchor element for each social media icon */}
         </div>
-        <div
-          className=" p-4 text-center"
-
-        >
+        <div className=" p-4 text-center">
           © 2024 Copyright :
           <a className="text-white px-3" href="https://www.cluix.in/">
             By Cluix Pvt. Ltd.

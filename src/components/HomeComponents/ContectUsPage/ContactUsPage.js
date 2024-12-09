@@ -15,7 +15,6 @@ import { message } from "antd";
 
 const ContactUsPage = () => {
   const pathname = usePathname();
-  
 
   const form = useRef();
   const [firstName, setFirstName] = useState("");
@@ -34,7 +33,7 @@ const ContactUsPage = () => {
         emailjs
           .sendForm(
             process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "service_myho88h",
-            process.env.NEXT_PUBLIC_EMAIL_JS_HOME_PAGE ,
+            process.env.NEXT_PUBLIC_EMAIL_JS_HOME_PAGE,
             form.current,
             {
               publicKey:
@@ -84,7 +83,7 @@ const ContactUsPage = () => {
       id: 3,
       name: "Address",
       nameDetails:
-        "Lab-2, 4th-floor, Synergy Building, IIT Delhi Campus, Hauz Khas, 110016",
+        "Lab - 4C-1D, 4th Floor, C Block, Research & Innovation Park, IIT Delhi Campus, Hauz Khas, South Delhi, Delhi - 110016",
       desc: "Come say hello at our office HQ.",
       link: "",
       icons: <FaMapMarkerAlt className="font-[20px]  h-10 w-10" />,
