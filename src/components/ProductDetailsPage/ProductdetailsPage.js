@@ -864,29 +864,29 @@ const ProductdetailsPage = ({ data }) => {
                 className="grid items-start grid-cols-1 lg:grid-cols-5 gap-12 px-4 md:px-5 lg:px-16 2xl:px-30"
               >
                 <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
-                  <div className="bg-white p-10 pt-0 px-2 rounded-xl">
+                  <div className="bg-white  p-10 pt-0 px-2 rounded-xl">
                     <Image
                       src={item?.images[imageId - 1]?.image}
-                      alt={`Product ${item?.images[imageId]?.id}`}
-                      className="rounded h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] 2xl:h-[700px] 2xl:w-[700px] "
+                      alt={` Product ${item?.images[imageId]?.id}`}
+                      className=" rounded  h-[300px] w-[300px] lg:h-[500px] 2xl:h-[700px] 2xl:h=w-[700px] lg:w-[500px] "
                       style={{ display: "inline-block" }}
                     />
                   </div>
                   <div className="mt-0 flex flex-wrap justify-center gap-x-10 gap-y-6 mx-auto">
-                    {item?.images?.map((img) => (
-                      <div key={img?.id} className="rounded-xl">
-                        <Image
-                          src={img?.image}
-                          onMouseEnter={() => setImageId(img.id)}
-                          alt={`Product ${img?.id}`}
-                          className="w-24 h-[100px] cursor-pointer"
-                          style={{ display: "inline-block" }}
-                        />
-                      </div>
-                    ))}
+                    {item?.images?.map((img) => {
+                      return (
+                        <div key={img?.id} className=" rounded-xl ">
+                          <Image
+                            src={img?.image}
+                            onMouseEnter={() => setImageId(img.id)}
+                            alt={`Product ${img?.id}`}
+                            className="w-24 h-[100px] cursor-pointer"
+                          />
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
-
                 <div className="lg:col-span-2">
                   <h2 className="text-2xl font-extrabold text-black">
                     {item?.title}
