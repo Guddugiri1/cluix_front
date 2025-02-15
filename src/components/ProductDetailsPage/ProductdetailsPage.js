@@ -663,9 +663,9 @@ const ProductdetailsPage = ({ data }) => {
               value: "IP 67      ",
             },
           ],
-        }, 
+        },
         {
-          id: 2, 
+          id: 2,
           name: "Measurement of Starch      ",
           details: [
             {
@@ -864,28 +864,29 @@ const ProductdetailsPage = ({ data }) => {
                 className="grid items-start grid-cols-1 lg:grid-cols-5 gap-12 px-4 md:px-5 lg:px-16 2xl:px-30"
               >
                 <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
-                  <div className="bg-white  p-10 pt-0 px-2 rounded-xl">
+                  <div className="bg-white p-10 pt-0 px-2 rounded-xl">
                     <Image
                       src={item?.images[imageId - 1]?.image}
-                      alt={` Product ${item?.images[imageId]?.id}`}
-                      className=" rounded  h-[300px] lg:h-[500px] 2xl:h-[700px] w-full"
+                      alt={`Product ${item?.images[imageId]?.id}`}
+                      className="rounded h-[300px] w-[300px] lg:h-[500px] lg:w-[500px] 2xl:h-[700px] 2xl:w-[700px] "
+                      style={{ display: "inline-block" }}
                     />
                   </div>
                   <div className="mt-0 flex flex-wrap justify-center gap-x-10 gap-y-6 mx-auto">
-                    {item?.images?.map((img) => {
-                      return (
-                        <div key={img?.id} className=" rounded-xl ">
-                          <Image
-                            src={img?.image}
-                            onMouseEnter={() => setImageId(img.id)}
-                            alt={`Product ${img?.id}`}
-                            className="w-24 h-[100px] cursor-pointer"
-                          />
-                        </div>
-                      );
-                    })}
+                    {item?.images?.map((img) => (
+                      <div key={img?.id} className="rounded-xl">
+                        <Image
+                          src={img?.image}
+                          onMouseEnter={() => setImageId(img.id)}
+                          alt={`Product ${img?.id}`}
+                          className="w-24 h-[100px] cursor-pointer"
+                          style={{ display: "inline-block" }}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
+
                 <div className="lg:col-span-2">
                   <h2 className="text-2xl font-extrabold text-black">
                     {item?.title}
@@ -898,7 +899,7 @@ const ProductdetailsPage = ({ data }) => {
                       <strike>{item?.price}</strike>
                     </p>
                   </div>
-                    <p>Inclusive of all taxes</p>
+                  <p>Inclusive of all taxes</p>
 
                   <div className="flex flex-wrap gap-4 mt-8">
                     <Link href={"https://mydukaan.io/cluix1"}>
@@ -921,18 +922,18 @@ const ProductdetailsPage = ({ data }) => {
                     >
                       <div className="add-to-cart-price mt-4">
                         {/* changes by Nitish  */}
-                      {item.id == 2 && (
+                        {item.id == 2 && (
                           <>
                             <ProductDescrition
-                            lable={"MRP: "}
-                            text={`₹ 76,227.00`}
-                          />
-                          <ProductDescrition
-                          lable={" Price For :"}
-                          text={"1 set"}
-                        />
+                              lable={"MRP: "}
+                              text={`₹ 76,227.00`}
+                            />
+                            <ProductDescrition
+                              lable={" Price For :"}
+                              text={"1 set"}
+                            />
 
-<ProductDescrition
+                            <ProductDescrition
                               lable={"Product id :"}
                               text={"5116877-98681873194"}
                             />
@@ -947,81 +948,79 @@ const ProductdetailsPage = ({ data }) => {
                               text={" India"}
                             />
 
-<div className="sub-section specifications">
-                          <TitleProductDetails>
-                            Specifications
-                          </TitleProductDetails>
+                            <div className="sub-section specifications">
+                              <TitleProductDetails>
+                                Specifications
+                              </TitleProductDetails>
 
-                          <div
-                            id="golden-parameters"
-                            className="golden-parameters collapsible mt-4"
-                            style={{ maxHeight: "none" }}
-                          >
-                            <div className="golden-params-container">
-                              <ProductDescrition
-                                lable={"Type of Meter/Analyzer : "}
-                                text={" Hand-Held"}
-                              />
-                              <ProductDescrition
-                                lable={"Intended Application : "}
-                                text={
-                                  "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments"
-                                }
-                              />
-                              <ProductDescrition
-                                lable={"Total Parameters 12: "}
-                                text={
-                                  " Free Residual Chlorine (FRC),  Potential of Hydrogen (pH), Total Hardness (TH), Total Dissolved Solids (TDS)(Reagent-free), Turbidity (TUR), Lead (Pb), Iron (Fe), Fluoride (F), Nitrate (NO3), Copper (Cu), Total Alkalinity, Electrical Conductivity (Reagent-free)."
-                                }
-                              />
-                              <ProductDescrition
-                                // lable={"Total Parameters 12: "}
-                                text={
-                                  "Each parameter, except TDS and Electrical Conductivity, comes with 100 test strips."
-                                }
-                              />
+                              <div
+                                id="golden-parameters"
+                                className="golden-parameters collapsible mt-4"
+                                style={{ maxHeight: "none" }}
+                              >
+                                <div className="golden-params-container">
+                                  <ProductDescrition
+                                    lable={"Type of Meter/Analyzer : "}
+                                    text={" Hand-Held"}
+                                  />
+                                  <ProductDescrition
+                                    lable={"Intended Application : "}
+                                    text={
+                                      "To test and analyze various Water Quality Parameters to ensure Uniform Drinking Water Quality Protocol, 2019 and BIS IS 10500:2012 (Second Version) and subsequent amendments"
+                                    }
+                                  />
+                                  <ProductDescrition
+                                    lable={"Total Parameters 12: "}
+                                    text={
+                                      " Free Residual Chlorine (FRC),  Potential of Hydrogen (pH), Total Hardness (TH), Total Dissolved Solids (TDS)(Reagent-free), Turbidity (TUR), Lead (Pb), Iron (Fe), Fluoride (F), Nitrate (NO3), Copper (Cu), Total Alkalinity, Electrical Conductivity (Reagent-free)."
+                                    }
+                                  />
+                                  <ProductDescrition
+                                    // lable={"Total Parameters 12: "}
+                                    text={
+                                      "Each parameter, except TDS and Electrical Conductivity, comes with 100 test strips."
+                                    }
+                                  />
 
-                              {/* <ProductDescrition
+                                  {/* <ProductDescrition
                                 lable={"Measured Water Quality Parameters : "}
                                 text={
                                   " Potential of hydrogen (pH) ,Total dissolved solids (TDS) ,Turbidity ,Color ,Free Residual Chlorine ,Total Hardness ,Electrical Conductivity ,Lead"
                                 }
                               /> */}
-                              <ProductDescrition
-                                lable={"What is in the box : "}
-                                text={
-                                  "Reagent kit box, Carrying case/bag included in the scope of the supply, User manual,  Type C USB Cable, TDS Probe Only"
-                                }
-                              />
-                              <ProductDescrition
-                                lable={"Warranty on Equipment (Year) : "}
-                                text={"1"}
-                              />
-                              <ProductDescrition
-                                lable={
-                                  "Warranty on Cables for Connecting Probe (Year) : "
-                                }
-                                text={"1"}
-                              />
+                                  <ProductDescrition
+                                    lable={"What is in the box : "}
+                                    text={
+                                      "Reagent kit box, Carrying case/bag included in the scope of the supply, User manual,  Type C USB Cable, TDS Probe Only"
+                                    }
+                                  />
+                                  <ProductDescrition
+                                    lable={"Warranty on Equipment (Year) : "}
+                                    text={"1"}
+                                  />
+                                  <ProductDescrition
+                                    lable={
+                                      "Warranty on Cables for Connecting Probe (Year) : "
+                                    }
+                                    text={"1"}
+                                  />
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-
                           </>
-                          
-                      )}
-                      {item.id == 1 && (
+                        )}
+                        {item.id == 1 && (
                           <>
-                              <ProductDescrition
+                            <ProductDescrition
                               lable={"MRP: "}
                               text={`₹ 19,470.00`}
-                              />
-                              <ProductDescrition
+                            />
+                            <ProductDescrition
                               lable={" Price For :"}
                               text={"1 kit"}
-                              />
+                            />
 
-<ProductDescrition
+                            <ProductDescrition
                               lable={"Product id :"}
                               text={"5116877-98681873194"}
                             />
@@ -1036,62 +1035,59 @@ const ProductdetailsPage = ({ data }) => {
                               text={" India"}
                             />
 
-<div className="sub-section specifications">
+                            <div className="sub-section specifications">
+                              <div
+                                id="golden-parameters"
+                                className="golden-parameters collapsible mt-4"
+                                style={{ maxHeight: "none" }}
+                              >
+                                <div className="golden-params-container">
+                                  <ProductDescrition
+                                    lable={"Key Features : "}
+                                    // text={" Hand-Held"}
+                                  />
+                                  <ProductDescrition
+                                    lable={"Comprehensive Testing : "}
+                                    text={
+                                      "Covers a range of essential parameters, including pH, TDS, conductivity, turbidity, chlorine, and more."
+                                    }
+                                  />
+                                  <ProductDescrition
+                                    lable={"Easy-to-Use: "}
+                                    text={
+                                      "User-friendly design and clear instructions for hassle-free testing."
+                                    }
+                                  />
+                                  <ProductDescrition
+                                    lable={"Accurate Results: "}
+                                    text={
+                                      "Precise measurements and reliable results."
+                                    }
+                                  />
 
-                          <div
-                            id="golden-parameters"
-                            className="golden-parameters collapsible mt-4"
-                            style={{ maxHeight: "none" }}
-                          >
-                            <div className="golden-params-container">
-                              <ProductDescrition
-                                lable={"Key Features : "}
-                                // text={" Hand-Held"}
-                              />
-                              <ProductDescrition
-                                lable={"Comprehensive Testing : "}
-                                text={
-                                  "Covers a range of essential parameters, including pH, TDS, conductivity, turbidity, chlorine, and more."
-                                }
-                              />
-                              <ProductDescrition
-                                lable={"Easy-to-Use: "}
-                                text={
-                                  "User-friendly design and clear instructions for hassle-free testing."
-                                }
-                              />
-                              <ProductDescrition
-                                lable={"Accurate Results: "}
-                                text={
-                                  "Precise measurements and reliable results."
-                                }
-                              />
-
-                              <ProductDescrition
-                                lable={"Portable and Compact : "}
-                                text={
-                                  "Ideal for on-site and field testing."
-                                }
-                              />
-                              <ProductDescrition
-                                lable={"Kit Includes : "}
-                                text={
-                                  "Reagent for various parameters, Detailed instructions"
-                                }
-                              />
+                                  <ProductDescrition
+                                    lable={"Portable and Compact : "}
+                                    text={
+                                      "Ideal for on-site and field testing."
+                                    }
+                                  />
+                                  <ProductDescrition
+                                    lable={"Kit Includes : "}
+                                    text={
+                                      "Reagent for various parameters, Detailed instructions"
+                                    }
+                                  />
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                        
                           </>
-                      )}
-                      {item.id ===4 && (
-                        <ProductDescrition
-                        // lable={"MRP: "}
-                        text={`Not Found`}
-                        />
-                      )}
-                        
+                        )}
+                        {item.id === 4 && (
+                          <ProductDescrition
+                            // lable={"MRP: "}
+                            text={`Not Found`}
+                          />
+                        )}
 
                         {/* <ProductDescrition lable={"Discount :"} text={"10%"} /> */}
                         {/* <ProductDescrition
@@ -1173,13 +1169,13 @@ const ProductdetailsPage = ({ data }) => {
                                 }
                               /> */}
 
-                              {/* <ProductDescrition
+                          {/* <ProductDescrition
                                 lable={"Measured Water Quality Parameters : "}
                                 text={
                                   " Potential of hydrogen (pH) ,Total dissolved solids (TDS) ,Turbidity ,Color ,Free Residual Chlorine ,Total Hardness ,Electrical Conductivity ,Lead"
                                 }
                               /> */}
-                              {/* <ProductDescrition
+                          {/* <ProductDescrition
                                 lable={"What is in the box : "}
                                 text={
                                   "Reagent kit box, Carrying case/bag included in the scope of the supply, User manual,  Type C USB Cable, TDS Probe Only"
@@ -1223,8 +1219,6 @@ const ProductdetailsPage = ({ data }) => {
                       )}
                     </div>
                   </div>
-
-
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 py-10  ">
