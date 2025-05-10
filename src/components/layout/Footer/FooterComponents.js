@@ -50,7 +50,7 @@ const FooterComponents = () => {
     },
     {
       id: "2",
-      link: "/privacy-policy",
+      link: "/privacy",
       name: "Privacy & Policy",
     },
     {
@@ -311,7 +311,7 @@ const FooterComponents = () => {
             href="https://urlwebwala.com/"
             target="_blank"
           >
-            Design By @Urlwebwala Pvt. Ltd.
+            Design By @Urlwebwala LLP.
           </a>
         </div>
       </div>
