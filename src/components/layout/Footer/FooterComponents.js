@@ -50,7 +50,7 @@ const FooterComponents = () => {
     },
     {
       id: "2",
-      link: "/privacy",
+      link: "/privacy-policy",
       name: "Privacy & Policy",
     },
     {

@@ -114,9 +114,19 @@ const PrivacyPolicy = () => {
               text={`We do not sell or rent your personal data. We may share your information with:`}
             />
             <ul className="list-disc ml-12 text-base mb-3 opacity-90">
-              <li>Service providers (payment, analytics, logistics, etc.)</li>
-              <li>Third-party tools like Google Analytics with safeguards</li>
-              <li>Legal or regulatory bodies if required</li>
+              <li>
+                Service providers and partners involved in payment processing,
+                analytics, hosting, logistics, or support functions.
+              </li>
+              <li>
+                Third-party analytics and advertising tools, such as Google
+                Analytics, for understanding and improving your experience (with
+                appropriate data safeguards)
+              </li>
+              <li>
+                Legal or regulatory authorities, if required by law or to
+                protect our rights
+              </li>
             </ul>
             <Text
               text={`All third parties are obligated to maintain confidentiality and data security.`}
@@ -124,7 +134,20 @@ const PrivacyPolicy = () => {
 
             <Heading heading={"5. Location Data & Consent"} />
             <Text
-              text={`We will request location permission for location-based features, store it only as needed, and let you disable it via device settings. Location is associated with device ID solely for service improvements.`}
+              text={`If you use location-based features (e.g., demo booking, service availability, or nearest service location), we will: `}
+            />
+            <ul className="list-disc ml-12 text-base mb-3 opacity-90">
+              <li>Request your permission to access device location</li>
+              <li>
+                Store data only for the duration required for the service.
+              </li>
+              <li>
+                Allow you to opt-out at any time by disabling location
+                permissions on your device.
+              </li>
+            </ul>
+            <Text
+              text={`We associate location data with your unique device ID and usage behavior only to provide and improve services..`}
             />
 
             <Heading heading={"6. Data Retention"} />
@@ -144,31 +167,33 @@ const PrivacyPolicy = () => {
               <li>Measure usage and traffic</li>
             </ul>
             <Text
-              text={`You may disable cookies in your browser, but some features may be affected.`}
+              text={`You may disable cookies through browser settings, but this may affect your experience on the site.`}
             />
 
             <Heading heading={"8. Your Rights"} />
             <ul className="list-disc ml-12 text-base mb-3 opacity-90">
-              <li>Access or correct your data</li>
-              <li>Request deletion</li>
-              <li>Withdraw consent</li>
-              <li>Opt-out of marketing communications</li>
+              <li>Access and correct personal data</li>
+              <li>Delete your data from our systems</li>
+              <li>Withdraw consent for certain processing activities</li>
+              <li>Opt-out of promotional communications</li>
             </ul>
-            <Text text={`To exercise your rights, contact: support@cluix.in`} />
+            <Text
+              text={`To exercise any of these rights, please email: support@cluix.in`}
+            />
 
             <Heading heading={"9. Children’s Privacy"} />
             <Text
-              text={`We do not knowingly collect data from children under 13. If you believe a child has provided information, contact us to delete it.`}
+              text={`Our Services are not intended for children under the age of 13 (or applicable age under local law). We do not knowingly collect data from minors.`}
             />
 
             <Heading heading={"10. Data Security"} />
             <Text
-              text={`We use encryption, firewalls, and secure servers to protect your information. Still, no system is 100% secure.`}
+              text={`We use industry-standard security practices including encryption, firewalls, and secure server access to protect your personal information. However, no system is entirely immune to security risks..`}
             />
 
             <Heading heading={"11. Policy Updates"} />
             <Text
-              text={`We may update this policy. Material changes will be notified via website banner or email. Continued use implies consent.`}
+              text={`We may update this Privacy Policy periodically. If we make material changes, we will notify you via website banner or email. Your continued use of the Services after changes constitutes your consent to the revised policy.`}
             />
 
             <Heading heading={"12. Contact Us"} />
