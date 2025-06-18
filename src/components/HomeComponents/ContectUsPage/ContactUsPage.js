@@ -93,7 +93,7 @@ const ContactUsPage = () => {
       name: "Phone",
       number: "+91 9560589782 ",
       nameDetails: " +91 9910199782",
-      desc: "+91 8800824467,/n +91 9910199782",
+      desc: "+91 9211590235,/n +91 9910199782",
       link: "",
       icons: <FaPhoneVolume className="font-[20px]  h-10 w-10" />,
     },

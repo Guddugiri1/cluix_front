@@ -213,7 +213,7 @@ const PrivacyPolicy = () => {
                 "IIT Delhi Campus, Hauz Khas, South Delhi, Delhi – 110016"
               }
             />
-            <ContactInfo contactinfo={" +91 8800824467 | +91 9485883388"} />
+            <ContactInfo contactinfo={" +91 9211590235 | +91 9485883388"} />
             <ContactInfo contactinfo={" support@cluix.in | info@cluix.in"} />
           </div>
         </Col>

@@ -173,7 +173,7 @@ const FooterComponents = () => {
                       </span>
                       <div className="flex flex-col  ">
                         <p className="px-5 text-nowrap ">
-                          <a href="tel:+918800824467">+91 8800824467</a>
+                          <a href="tel:+919211590235">+91 9211590235</a>
                         </p>
 
                         <p className="px-2  ">
@@ -302,7 +302,7 @@ const FooterComponents = () => {
           {/* Repeat the above anchor element for each social media icon */}
         </div>
         <div className=" p-4 text-center">
-          © 2024 Copyright :
+          © 2025 Copyright :
           <a className="text-white px-3" href="https://www.cluix.in/">
             By Cluix Pvt. Ltd.
           </a>
