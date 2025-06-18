@@ -12,7 +12,6 @@ import partner8 from "../../../public/client/partner5.svg";
 // Use distinct variable names to avoid overwriting
 import partner9a from "../../../public/client/partner16.png";
 import partner9b from "../../../public/client/partner17.png";
-import partner10 from "../../../public/client/partner12.png";
 import partner14 from "../../../public/client/partner17.jpeg";
 
 import "./HomeComponent.css";
@@ -48,7 +47,6 @@ const img = [
   { id: 6, image: partner9a },
   { id: 7, image: partner9b },
   { id: 8, image: partner2 },
-  { id: 9, image: partner10 },
 ];
 
 const HomeComponents = () => (
