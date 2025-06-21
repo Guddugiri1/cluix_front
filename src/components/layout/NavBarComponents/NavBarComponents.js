@@ -21,6 +21,8 @@ import logo4 from "../../../../public/newBlackLogo.png";
 import logowhite from "../../../../public/newLogo.png";
 import { usePathname } from "next/navigation";
 import { IoSearchOutline } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
+
 import SearchComponents, { menuWithDropdown } from "./SearchComponents";
 
 const { Search } = Input;
@@ -34,7 +36,7 @@ function NavBarComponents({ className }) {
   const [loading, setLoading] = useState(false);
   const pathname = usePathname();
   const [search, setSearch] = useState("");
-  
+
   const menu = [
     { name: "Home", link: "/" },
     {
@@ -68,14 +70,12 @@ function NavBarComponents({ className }) {
     setMenuOpen((prev) => !prev);
   };
 
-  
-
   const [hasScrolled, setHasScrolled] = useState(false);
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
   const [resourceDropdownOpen, setResourceDropdownOpen] = useState(false);
-  const [searchResultData, setSearchResultData] = useState(null)
-  const [searchOpen,setSearchOpen]=useState(false)
+  const [searchResultData, setSearchResultData] = useState(null);
+  const [searchOpen, setSearchOpen] = useState(false);
   const handleShowDropdownMenu = () => {
     setMenuOpen(false);
     setCompanyDropdownOpen((prev) => !prev);
@@ -90,25 +90,22 @@ function NavBarComponents({ className }) {
   };
 
   useEffect(() => {
-
     const filteredData = menu.filter((item) => {
       return item.name.toLowerCase().includes(search.toLowerCase());
     });
 
-
-
     const searchResults = menuWithDropdown.filter((item) =>
       item.name.toLowerCase().includes(search.toLowerCase())
     );
-    setSearchResultData(searchResults)
+    setSearchResultData(searchResults);
 
     // Do something with the filtered data here
   }, [search]);
 
-const handleOpenSearch=()=>{
-  setSearchOpen((prev)=>!prev)
-  setSearch("")
-}
+  const handleOpenSearch = () => {
+    setSearchOpen((prev) => !prev);
+    setSearch("");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -133,9 +130,11 @@ const handleOpenSearch=()=>{
   const isVisible = !hasScrolled || (hasScrolled && window.scrollY === 0);
   return (
     <nav
-      className={`${isVisible && pathname === "/" ? "" : "shadow-lg"
-        }  px-2 sm:px-3 md:px-8 xl:px-12 2xl:px-10 z-[51] transition-all duration-500 ease-in-out fixed w-full ${isVisible && pathname === "/" ? "bg-transparent" : "bg-white"
-        }  z-50 top-0 left-0 right-0 start-0 ${className}`}
+      className={`${
+        isVisible && pathname === "/" ? "" : "shadow-lg"
+      }  px-2 sm:px-3 md:px-8 xl:px-12 2xl:px-10 z-[51] transition-all duration-500 ease-in-out fixed w-full ${
+        isVisible && pathname === "/" ? "bg-transparent" : "bg-white"
+      }  z-50 top-0 left-0 right-0 start-0 ${className}`}
     >
       {/* <div
         className={` ${
@@ -193,19 +192,21 @@ const handleOpenSearch=()=>{
                 {menuOpen ? (
                   <IoClose
                     onClick={handleShowMenu}
-                    className={`w-10 h-10 ${isVisible && pathname === "/"
-                      ? "text-white"
-                      : "text-black"
-                      } `}
+                    className={`w-10 h-10 ${
+                      isVisible && pathname === "/"
+                        ? "text-white"
+                        : "text-black"
+                    } `}
                   />
                 ) : (
                   <button
                     data-collapse-toggle="navbar-sticky"
                     type="button"
-                    className={`inline-flex items-center py-2  w-8 h-10 justify-center text-sm  rounded-lg lg:hidden ${isVisible && pathname === "/"
-                      ? "text-white"
-                      : "text-black"
-                      }  hover:text-[#58bed3]`}
+                    className={`inline-flex items-center py-2  w-8 h-10 justify-center text-sm  rounded-lg lg:hidden ${
+                      isVisible && pathname === "/"
+                        ? "text-white"
+                        : "text-black"
+                    }  hover:text-[#58bed3]`}
                     aria-controls="navbar-sticky"
                     aria-expanded="false"
                     onClick={handleShowMenu}
@@ -281,10 +282,11 @@ const handleOpenSearch=()=>{
                             </span>
                           ) : (
                             <span
-                              className={`block ${isVisible && pathname === "/"
-                                ? "text-white"
-                                : "text-black"
-                                }  py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent   cursor-pointer`}
+                              className={`block ${
+                                isVisible && pathname === "/"
+                                  ? "text-white"
+                                  : "text-black"
+                              }  py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent   cursor-pointer`}
                             >
                               <Link href={item?.link}>
                                 <div className="flex text-nowrap items-center gap-0">
@@ -352,9 +354,10 @@ const handleOpenSearch=()=>{
               </div>
               <Link href="/demo">
                 <button
-                  className={` hidden text-nowrap lg:block bg-[#28c0d740] font-bold  ${isVisible && pathname == "/" ? "text-white" : "text-black"
-                    } px-3 py-2 rounded-lg`}
-                // style={{ background: "#28c0d7", color: "white" }}
+                  className={` hidden text-nowrap lg:block bg-[#28c0d740] font-bold  ${
+                    isVisible && pathname == "/" ? "text-white" : "text-black"
+                  } px-3 py-2 rounded-lg`}
+                  // style={{ background: "#28c0d7", color: "white" }}
                 >
                   Book Demo
                 </button>
@@ -364,45 +367,63 @@ const handleOpenSearch=()=>{
                 className="hidden lg:flex"
               >
                 <span
-                  className={`block  py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent ${isVisible && pathname === "/" ? "text-white" : "text-black"
-                    }   cursor-pointer`}
+                  className={`block  py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent ${
+                    isVisible && pathname === "/" ? "text-white" : "text-black"
+                  }   cursor-pointer`}
                 >
                   {" "}
                   Dashboard
                 </span>
               </Link>
               <>
-                <div id="myOverlay" className="overlay block" style={{display:searchOpen?"block":"none"}}>
-                  <span className="closebtn" onClick={handleOpenSearch}  title="Close Overlay">
+                <div
+                  id="myOverlay"
+                  className="overlay block"
+                  style={{ display: searchOpen ? "block" : "none" }}
+                >
+                  <span
+                    className="closebtn"
+                    onClick={handleOpenSearch}
+                    title="Close Overlay"
+                  >
                     ×
                   </span>
                   <div className="overlay-content flex flex-col justify-center items-center ">
                     <Input
-                value={search}
-                
-                onChange={(e) => setSearch(e.target.value)}
-               className="text-white bg-gray-50 w-full rounded-lg border-none"
-                addonBefore={
-                  <IoSearchOutline
-                   className="text-xl rounded-xl  "
-                  />
-                }
-              />
-               {search.length > 0 && (
-                <ul className=" shadow-md mt-10 min-w-[300px] xl:min-w-[400px] shadow-gray-400 p-2 flex flex-col gap-4  bg-white text-black text-lg">
-                  {searchResultData.length > 0 ? searchResultData?.map((result) => (
-                    <li key={result?.name} onClick={() => setSearch("")} ><Link href={result?.link} >{result?.name}</Link></li>
-                  )) : <h2>Not Result Found</h2>}
-                </ul>
-              )}
-                    
+                      value={search}
+                      onChange={(e) => setSearch(e.target.value)}
+                      className="text-white bg-gray-50 w-full rounded-lg border-none"
+                      addonBefore={
+                        <IoSearchOutline className="text-xl rounded-xl  " />
+                      }
+                    />
+                    {search.length > 0 && (
+                      <ul className=" shadow-md mt-10 min-w-[300px] xl:min-w-[400px] shadow-gray-400 p-2 flex flex-col gap-4  bg-white text-black text-lg">
+                        {searchResultData.length > 0 ? (
+                          searchResultData?.map((result) => (
+                            <li
+                              key={result?.name}
+                              onClick={() => setSearch("")}
+                            >
+                              <Link href={result?.link}>{result?.name}</Link>
+                            </li>
+                          ))
+                        ) : (
+                          <h2>Not Result Found</h2>
+                        )}
+                      </ul>
+                    )}
                   </div>
                 </div>
-               
-                <button onClick={handleOpenSearch} className="openBtn" style={{
-                  color: isVisible && pathname === "/" ? "white" : "black",
-                }}  >
-                  <IoSearchSharp/>
+
+                <button
+                  onClick={handleOpenSearch}
+                  className="openBtn"
+                  style={{
+                    color: isVisible && pathname === "/" ? "white" : "black",
+                  }}
+                >
+                  <IoSearchSharp />
                 </button>
               </>
 
@@ -421,11 +442,12 @@ const handleOpenSearch=()=>{
                   />
                 }
               /> */}
-             
+
               <Link href={"https://mydukaan.io/cluix1"}>
                 <button
-                  className={`flex w-fit items-center gap-1 ${isVisible && pathname === "/" ? "text-white" : "text-black"
-                    }`}
+                  className={`flex w-fit items-center gap-1 ${
+                    isVisible && pathname === "/" ? "text-white" : "text-black"
+                  }`}
                 >
                   {" "}
                   <svg
@@ -449,126 +471,114 @@ const handleOpenSearch=()=>{
           </div>
 
           {menuOpen && (
-            <div className="w-full lg:hidden pb-3 md:pb-4 bg-white">
-              <ul className="font-medium bg-white flex flex-col mt-2 pr-0 border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse ">
-                {menu.map((item, index) => {
-                  return (
-                    <li key={index} className="relative">
-                      {item?.name == "Company" ? (
-                        <span
-                          className="block py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent hover:bg-[var(--light-blue)] hover:text-white cursor-pointer"
-                          onMouseLeave={() => setCompanyDropdownOpen(false)}
-                          onMouseEnter={() => setCompanyDropdownOpen(true)}
-                        >
-                          <Link href={item?.link}>
-                            <div
-                              onClick={() => setMenuOpen(false)}
-                              className="flex items-center gap-2"
-                            >
-                              <div>{item?.name}</div>
-                              <div>{item?.icon}</div>
-                            </div>
-                          </Link>
-                        </span>
-                      ) : item?.name == "Resources" ? (
-                        <span
-                          className="block py-2 px-3 text-[15px] xl:text-[17px]  font-bold rounded-lg md:bg-transparent hover:bg-[var(--light-blue)] hover:text-white cursor-pointer"
-                          // onClick={() => setResourceDropdownOpen(!resourceDropdownOpen)}
-                          onMouseEnter={() => setResourceDropdownOpen(true)}
-                          onMouseLeave={() => setResourceDropdownOpen(false)}
-                        >
-                          <Link
-                            href={item?.link}
-                            onClick={() => setMenuOpen(false)}
-                          >
-                            <div className="flex items-center gap-2">
-                              <div>{item?.name}</div>
-                              <div>{item?.icon}</div>
-                            </div>
-                          </Link>
-                        </span>
-                      ) : (
-                        <span className="block py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent hover:bg-[var(--light-blue)] hover:text-white cursor-pointer">
-                          <Link
-                            href={item?.link}
-                            onClick={() => setMenuOpen(false)}
-                          >
-                            <div className="flex items-center gap-2">
-                              <div>{item?.name}</div>
-                              <div>{item?.icon}</div>
-                            </div>
-                          </Link>
-                        </span>
-                      )}
-                      {item?.name == "Company" && companyDropdownOpen && (
-                        <div
-                          className="z-10  bg-white  hover:block  absolute rounded-lg shadow w-44 "
-                          onMouseEnter={() => setCompanyDropdownOpen(true)}
-                          onMouseLeave={() => setCompanyDropdownOpen(false)}
-                        >
-                          <ul className="py-2 text-[18px] text-black ">
-                            {menuDropdown.map((item, i) => {
-                              return (
-                                <li key={i}>
-                                  <Link
-                                    onClick={() => setMenuOpen(false)}
-                                    href={item?.link}
-                                    className="block px-4 py-2 text-[15px] xl:text-[17px] hover:bg-[var(--light-blue)] hover:text-white"
-                                  >
-                                    {item.name}
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      )}
+            <div className="fixed inset-0 z-50 lg:hidden flex">
+              {/* Overlay */}
+              <div
+                className="fixed inset-0 bg-black opacity-40 backdrop-blur-sm"
+                onClick={handleShowMenu}
+              ></div>
 
-                      {item?.name == "Resources" && resourceDropdownOpen && (
-                        <div
-                          className="z-10  bg-white  absolute rounded-lg shadow w-44 "
-                          onMouseEnter={() => setResourceDropdownOpen(true)}
-                          onMouseLeave={() => setResourceDropdownOpen(false)}
+              {/* Sidebar */}
+              <div className="relative z-50 w-[80%] max-w-xs bg-white/95 h-full shadow-2xl flex flex-col p-6 rounded-r-xl">
+                {/* Logo & Close */}
+                {/* Logo & Close */}
+                <div className="flex items-center justify-between mb-4">
+                  <Image src={logo4} alt="logo" width={120} />
+                  <IoClose
+                    className="text-2xl cursor-pointer hover:text-red-500 transition"
+                    onClick={handleShowMenu}
+                  />
+                </div>
+
+                {/* Description Text Below Logo */}
+                <p className="text-sm text-gray-600 mb-6 leading-snug">
+                  As an innovative cleantech startup, we create breakthrough
+                  solutions that go beyond convention—prioritizing both advanced
+                  technology and real-world impact.
+                </p>
+
+                {/* Navigation Links */}
+                <ul className="flex flex-col gap-5 flex-grow">
+                  {menu.map((item, index) => (
+                    <li key={index}>
+                      {item.link.startsWith("http") ? (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-lg font-medium hover:text-[var(--light-blue)] transition"
                         >
-                          <ul className="py-2 text-[18px] text-black ">
-                            {menuResourceDropdown.map((item, i) => {
-                              return (
-                                <li key={i}>
-                                  <Link
-                                    href={item?.link}
-                                    className="block px-4 py-2 hover:bg-[var(--light-blue)] hover:text-white"
-                                  >
-                                    {item.name}
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
+                          {item.name}
+                        </a>
+                      ) : (
+                        <Link
+                          href={item.link}
+                          onClick={handleShowMenu}
+                          className="block text-lg font-medium hover:text-[var(--light-blue)] transition"
+                        >
+                          {item.name}
+                        </Link>
                       )}
                     </li>
-                  );
-                })}
-                <li>
-                  <Link href={"/demo"}>
-                    <span
-                      onClick={handleShowMenu}
-                      className="block py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent hover:bg-[var(--light-blue)] hover:text-white cursor-pointer"
+                  ))}
+                  <li>
+                    <Link href="/demo" onClick={handleShowMenu}>
+                      <span className="block text-lg font-medium hover:text-[var(--light-blue)] transition">
+                        Book Demo
+                      </span>
+                    </Link>
+                  </li>
+                  <li>
+                    <a
+                      href="https://dashboard.cluix.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-lg font-medium hover:text-[var(--light-blue)] transition"
                     >
-                      {" "}
-                      Book demo
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={"https://dashboard.cluix.in/"}>
-                    <span className="block py-2 px-3 text-[15px] xl:text-[17px] font-bold rounded-lg md:bg-transparent hover:bg-[var(--light-blue)] hover:text-white cursor-pointer">
-                      {" "}
                       Dashboard
-                    </span>
-                  </Link>
-                </li>
-              </ul>
+                    </a>
+                  </li>
+                </ul>
+
+                {/* Divider */}
+                <div className="border-t mt-6 pt-4" />
+
+                {/* Social Icons */}
+                <div className="flex items-center justify-between">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 flex items-center justify-center border rounded-lg text-xl text-black hover:bg-[#1877f2] hover:text-white shadow-sm transition"
+                  >
+                    <FaFacebook />
+                  </a>
+                  <a
+                    href="https://twitter.com/cluix_in?s=21&t=wPkHGdY8LGNRyCPGn1-zLw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 flex items-center justify-center border rounded-lg text-xl text-black hover:bg-[#1da1f2] hover:text-white shadow-sm transition"
+                  >
+                    <FaTwitter />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/cluix.in/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 flex items-center justify-center border rounded-lg text-xl text-black hover:bg-[#e1306c] hover:text-white shadow-sm transition"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/cluix/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 flex items-center justify-center border rounded-lg text-xl text-black hover:bg-[#0077b5] hover:text-white shadow-sm transition"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </div>
+              </div>
             </div>
           )}
         </div>
