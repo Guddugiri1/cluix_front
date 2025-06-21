@@ -9,10 +9,7 @@ import partner2 from "../../../public/client/partner13.png";
 import partner5 from "../../../public/client/partner18.png";
 import partner7 from "../../../public/client/partner3.jpg";
 import partner8 from "../../../public/client/partner5.svg";
-// Use distinct variable names to avoid overwriting
-import partner9a from "../../../public/client/partner16.png";
-import partner9b from "../../../public/client/partner17.png";
-import partner14 from "../../../public/client/partner17.jpeg";
+import partner14 from "../../../public/client/partner19.png"; // Add this import for partner19.png
 
 import "./HomeComponent.css";
 import dynamic from "next/dynamic";
@@ -40,12 +37,10 @@ import TeamComponents from "../Team/TeamComponents";
 
 const img = [
   { id: 1, image: partner1 },
-  { id: 2, image: partner14 },
+  { id: 2, image: partner14 }, // Update partner14 to use partner19.png
   { id: 3, image: partner8 },
   { id: 4, image: partner5 },
   { id: 5, image: partner7 },
-  { id: 6, image: partner9a },
-  { id: 7, image: partner9b },
   { id: 8, image: partner2 },
 ];
 
@@ -77,15 +72,19 @@ const HomeComponents = () => (
         </SubTitle>
         <div className="px-6 flex items-center justify-center pb-5 lg:pb-6">
           <Marquee speed={100} autoFill={true}>
-            <div className="flex items-end gap-4 lg:gap-12 px-3">
+            <div className="flex items-center gap-4 sm:gap-6 md:gap-10 lg:gap-12 px-2 sm:px-4 md:px-6">
               {img.map((item) => (
                 <Image
                   key={item.id}
                   src={item.image}
                   alt="partner-logo"
-                  height={100}
-                  width={150}
-                  className="h-[100px] lg:h-[150px] object-contain"
+                  height={item.id === 2 ? 150 : 100} // Control image render height
+                  width={item.id === 2 ? 380 : 150} // Control image render width
+                  className={`object-contain ${
+                    item.id === 2
+                      ? "w-[200px] sm:w-[280px] md:w-[340px] lg:w-[380px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[150px]"
+                      : "h-[60px] sm:h-[80px] md:h-[100px] lg:h-[150px] w-[100px] sm:w-[120px] md:w-[140px] lg:w-[150px]"
+                  }`}
                 />
               ))}
             </div>
