@@ -33,7 +33,7 @@ const StaticsComponets = () => {
       id: 2,
       icon: <FaUsers className="h-8 w-8 text-white" />,
       name: "Our Reach in States",
-      data: "6",
+      data: "7",
     },
     {
       id: 3,

@@ -18,6 +18,30 @@ import image6 from "../../../public/lifeImage/img14.jpg";
 import image7 from "../../../public/lifeImage/img15.jpg";
 import image8 from "../../../public/lifeImage/img16.jpg";
 import image9 from "../../../public/lifeImage/img17.jpg";
+import image10 from "../../../public/lifeImage/award6.jpg";
+import image11 from "../../../public/lifeImage/award7.jpg";
+import image12 from "../../../public/lifeImage/award8.jpg";
+import image13 from "../../../public/lifeImage/award9.jpg";
+import image14 from "../../../public/lifeImage/award10.jpg";
+import image15 from "../../../public/lifeImage/award11.jpg";
+import image16 from "../../../public/lifeImage/award12.jpg";
+import image17 from "../../../public/lifeImage/award13.jpg";
+import image18 from "../../../public/lifeImage/award14.jpg";
+import image19 from "../../../public/lifeImage/award15.jpg";
+import image20 from "../../../public/lifeImage/award16.jpg";
+import image21 from "../../../public/lifeImage/award17.jpg";
+import image22 from "../../../public/lifeImage/award18.jpg";
+import image23 from "../../../public/lifeImage/award19.jpg";
+import image24 from "../../../public/lifeImage/award20.jpg";
+import image25 from "../../../public/lifeImage/award21.jpg";
+import image26 from "../../../public/lifeImage/award22.jpg";
+import image27 from "../../../public/lifeImage/award23.png";
+import image28 from "../../../public/lifeImage/award24.jpg";
+import image29 from "../../../public/lifeImage/award25.jpg";
+import image30 from "../../../public/lifeImage/award26.jpg";
+import image31 from "../../../public/lifeImage/award27.jpg";
+
+
 import team2 from "../../../public/team.jpg";
 import team3 from "../../../public/team/team3.png";
 import team4 from "../../../public/team/team4.png";
@@ -34,6 +58,94 @@ import team8 from "../../../public/team/team2.jpg";
 const AboutUsPageComponent = () => {
   // DEFINE ALL IMAGES DATA
   const images = [
+    {
+      id: 10,
+      image: image10,
+    },
+    {
+      id: 11,
+      image: image11,
+    },
+    {
+      id: 12,
+      image: image12,
+    },
+    {
+      id: 13,
+      image: image13,
+    },
+    {
+      id: 14,
+      image: image14,
+    },
+    {
+      id: 15,
+      image: image15,
+    },
+    {
+      id: 16,
+      image: image16,
+    },
+    {
+      id: 17,
+      image: image17,
+    },
+    {
+      id: 18,
+      image: image18,
+    },
+    {
+      id: 19,
+      image: image19,
+    },
+    {
+      id: 20,
+      image: image20,
+    },
+    {
+      id: 21,
+      image: image21,
+    },
+    {
+      id: 22,
+      image: image22,
+    },
+    {
+      id: 23,
+      image: image23,
+    },
+    {
+      id: 24,
+      image: image24,
+    },
+    {
+      id: 25,
+      image: image25,
+    },
+    {
+      id: 26,
+      image: image26,
+    },
+    {
+      id: 27,
+      image: image27,
+    },
+    {
+      id: 28,
+      image: image28,
+    },
+    {
+      id: 29,
+      image: image29,
+    },
+    {
+      id: 30,
+      image: image30,
+    },
+    {
+      id: 31,
+      image: image31,
+    },
     {
       id: 1,
       image: image4,
@@ -70,6 +182,7 @@ const AboutUsPageComponent = () => {
       id: 9,
       image: image9,
     },
+    
   ];
 
   // DEFINE ALL TEAM MEMBERS DATA 
@@ -92,15 +205,15 @@ const AboutUsPageComponent = () => {
       linkedin: "",
       facebook: "",
     },
-    {
-      id: 2.22,
-      team_name: "Mr Yash Chauhan",
-      position: "Embedded Developer  ",
-      image: team12,
-      github: "",
-      linkedin: "",
-      facebook: "",
-    },
+    // {
+    //   id: 2.22,
+    //   team_name: "Mr Yash Chauhan",
+    //   position: "Embedded Developer  ",
+    //   image: team12,
+    //   github: "",
+    //   linkedin: "",
+    //   facebook: "",
+    // },
     {
       id: 3,
       team_name: "Nimisha Mishra",
@@ -110,15 +223,15 @@ const AboutUsPageComponent = () => {
       linkedin: "",
       facebook: "",
     },
-    {
-      id: 4,
-      team_name: "Dr Anju Mehra",
-      position: "Lead - Research & Development",
-      image: team3,
-      github: "",
-      linkedin: "",
-      facebook: "",
-    },
+    // {
+    //   id: 4,
+    //   team_name: "Dr Anju Mehra",
+    //   position: "Lead - Research & Development",
+    //   image: team3,
+    //   github: "",
+    //   linkedin: "",
+    //   facebook: "",
+    // },
     {
       id: 5,
       team_name: "Alina Rais",
@@ -266,7 +379,7 @@ const AboutUsPageComponent = () => {
             <div className="py-8 lg:py-16 lg:pt-0">
               <SubTitle>Core Team</SubTitle>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {teamMemberData.map((item) => {
                 return (
                   <div

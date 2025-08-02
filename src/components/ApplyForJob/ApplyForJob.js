@@ -142,13 +142,13 @@ const ApplyForJob = () => {
       location: "Hybrid ",
       postion: "Full Time",
     },
-    // {
-    //   id: 3,
-    //   title: "Startup Growth Intern",
-    //   desc: "CLUIX: Deep-tech social startup. Aims: minimize undetectable contaminants in drinking water. Developed IoT multi-parameter device, tests 8 critical parameters, shares data with central server.",
-    //   location: "Delhi",
-    //   postion: "Full Time",
-    // },
+    {
+      id: 3,
+      title: "Field Project Manager",
+      desc: "We’re looking for passionate individuals who want to contribute to something meaningful. If you’re someone who values impact and purpose in your work, please take a moment to read the details below carefully, it will help save both your time and ours.",
+      location: "Chennai & Lucknow",
+      postion: "Full Time",
+    },
   ];
 
   const lifeImg = [
@@ -304,12 +304,11 @@ const ApplyForJob = () => {
         </p>
       </div>
 
-      <div className="px-4">
+      <div className="lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <LifeStyle
           title={"Life @ CLUIX "}
           data={lifeImg}
-
-          className={" h-[200px] md:h-[400px] lg:h-[500px] w-fit gap-4 lg:w-fit lg:grid-cols-6"}
+          className={" w-fit xl:w-fit gap-0"}
 
         />
       </div>

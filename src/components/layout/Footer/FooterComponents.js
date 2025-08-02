@@ -41,6 +41,11 @@ const FooterComponents = () => {
       link: "/resource/social-media",
       name: "Our blogs",
     },
+    {
+      id: 6,
+      link: "/#newsletter",
+      name: "Our Newsletter",
+    },
   ];
   const customerServices = [
     {

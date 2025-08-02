@@ -6,10 +6,15 @@ import prduct1 from "../../../public/product2.png";
 import prduct2 from "../../../public/product4.jpg";
 import prduct3 from "../../../public/img/reajent2.png";
 import prduct4 from "../../../public/img/reajent3.png";
-import prduct5 from "../../../public/img/C012.png";
-import prduct6 from "../../../public/img/C0121.png";
-import prduct7 from "../../../public/img/C012.png";
-import prduct8 from "../../../public/img/C0121.png";
+import reajent4 from "../../../public/img/reajent4.png";
+import reajent5 from "../../../public/img/reajent5.png";
+import reajent6 from "../../../public/img/reajent6.png";
+import reajent7 from "../../../public/img/reajent7.png";
+import prduct5 from "../../../public/img/device1.png";
+import prduct6 from "../../../public/img/device2.png";
+import prduct7 from "../../../public/img/device3.png";
+import prduct8 from "../../../public/img/device4.png";
+import device8 from "../../../public/img/device5.png";
 import prduct9 from "../../../public/product/product8.png";
 import prduct10 from "../../../public/product/product9.png";
 import prduct11 from "../../../public/product/product10.png";
@@ -68,11 +73,19 @@ const ProductdetailsPage = ({ data }) => {
         },
         {
           id: 3,
-          image: prduct4,
+          image: reajent4,
         },
         {
           id: 4,
-          image: product,
+          image: reajent5,
+        },
+        {
+          id: 5,
+          image: reajent6,
+        },
+        {
+          id: 6,
+          image: reajent7,
         },
       ],
       data: [
@@ -206,6 +219,10 @@ const ProductdetailsPage = ({ data }) => {
         {
           id: 4,
           image: prduct8,
+        },
+        {
+          id: 5,
+          image: device8,
         },
       ],
       data: [
@@ -864,23 +881,25 @@ const ProductdetailsPage = ({ data }) => {
                 className="grid items-start grid-cols-1 lg:grid-cols-5 gap-12 px-4 md:px-5 lg:px-16 2xl:px-30"
               >
                 <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
-                  <div className="bg-white  p-10 pt-0 px-2 rounded-xl">
+                  <div className={`bg-white  p-10 pt-0 px-2 rounded-xl`}>
                     <Image
                       src={item?.images[imageId - 1]?.image}
                       alt={` Product ${item?.images[imageId]?.id}`}
-                      className=" rounded  h-[300px] w-[300px] lg:h-[500px] 2xl:h-[700px] 2xl:h=w-[700px] lg:w-[500px] "
+                      className={`rounded-xl h-[300px] w-[300px] lg:h-[500px] 2xl:h-[500px] 2xl:h=w-[500px] lg:w-[500px] ${item?.id === 2 && imageId === 1 ? 'w-full h-full lg:h-[500px] 2xl:h-[500px] 2xl:h=w-[30%] lg:w-[30%]' : ''}`}
                       style={{ display: "inline-block" }}
+                      objectFit="cover"
                     />
                   </div>
                   <div className="mt-0 flex flex-wrap justify-center gap-x-10 gap-y-6 mx-auto">
                     {item?.images?.map((img) => {
+                      console.log("img", img);
                       return (
                         <div key={img?.id} className=" rounded-xl ">
                           <Image
                             src={img?.image}
                             onMouseEnter={() => setImageId(img.id)}
                             alt={`Product ${img?.id}`}
-                            className="w-24 h-[100px] cursor-pointer"
+                            className={`rounded-xl w-24 h-[100px] cursor-pointer ${img?.id === 1 ? 'w-[50px] h-[100px]' : ''}`}
                           />
                         </div>
                       );
@@ -972,7 +991,7 @@ const ProductdetailsPage = ({ data }) => {
                                   <ProductDescrition
                                     lable={"Total Parameters 12: "}
                                     text={
-                                      " Free Residual Chlorine (FRC),  Potential of Hydrogen (pH), Total Hardness (TH), Total Dissolved Solids (TDS)(Reagent-free), Turbidity (TUR), Lead (Pb), Iron (Fe), Fluoride (F), Nitrate (NO3), Copper (Cu), Total Alkalinity, Electrical Conductivity (Reagent-free)."
+                                      " Free Residual Chlorine (FRC),  Potential of Hydrogen (pH), Total Hardness (TH), Total Dissolved Solids (TDS)(Reagent-free), Sulphate (SO4), Phosphate (PO4), Iron (Fe), Fluoride (F), Nitrate (NO3), Copper (Cu), Total Alkalinity, Electrical Conductivity (Reagent-free)."
                                     }
                                   />
                                   <ProductDescrition

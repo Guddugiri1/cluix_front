@@ -7,6 +7,7 @@ import slider from "../../../public/slider.webp";
 import partner1 from "../../../public/client/partner1.svg";
 import partner2 from "../../../public/client/partner13.png";
 import partner5 from "../../../public/client/partner18.png";
+import partner6 from "../../../public/client/partner6.jpeg";
 import partner7 from "../../../public/client/partner3.jpg";
 import partner8 from "../../../public/client/partner5.svg";
 import partner14 from "../../../public/client/partner19.png"; // Add this import for partner19.png
@@ -25,6 +26,8 @@ const StaticsComponets = dynamic(() =>
 );
 const BlogComponets = dynamic(() => import("./BlogComponents/BlogComponets"));
 
+const NewsletterComponents = dynamic (() => import("./NewsletterComponents/NewsletterComponents"));
+
 import TestimonialSlider from "./TestimonialComponents/TestimonialComponets";
 import ProductComponent from "./ProductComponent/ProductComponent";
 import MeetOurComponets from "./MeetOurTeamComponets/MeetOurComponets";
@@ -37,11 +40,12 @@ import TeamComponents from "../Team/TeamComponents";
 
 const img = [
   { id: 1, image: partner1 },
+  { id: 4, image: partner5 },
+  { id: 8, image: partner2 },
   { id: 2, image: partner14 }, // Update partner14 to use partner19.png
   { id: 3, image: partner8 },
-  { id: 4, image: partner5 },
   { id: 5, image: partner7 },
-  { id: 8, image: partner2 },
+  { id: 9, image: partner6 },
 ];
 
 const HomeComponents = () => (
@@ -131,6 +135,11 @@ const HomeComponents = () => (
     <Row data-aos="fade-up" className="w-full">
       <Col span={24}>
         <BlogComponets />
+      </Col>
+    </Row>
+    <Row data-aos="fade-up" className="w-full">
+      <Col span={24}>
+        <NewsletterComponents />
       </Col>
     </Row>
     <Row data-aos="fade-up" className="w-full">

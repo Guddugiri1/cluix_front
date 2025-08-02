@@ -6,12 +6,14 @@ import img6 from "../../../public/news/img2 (2).jpg";
 import img4_2 from "../../../public/news/img4.jpeg"; // Rename to img4_2
 import img5 from "../../../public/news/img5.webp";
 import img7 from "../../../public/news.jpg";
+import img11 from "../../../public/news/img11.png";
 import Image from "next/image";
 import Link from "next/link";
 import logo1 from "../../../public/news/logo1.png";
 import logo2 from "../../../public/news/logo2.png";
 import logo3 from "../../../public/news/logo3.png";
 import logo4 from "../../../public/news/media.png";
+import logo5 from "../../../public/news/logo4.png";
 
 import { MdOutlineWatchLater } from "react-icons/md";
 
@@ -30,6 +32,7 @@ const MediaComponents = () => {
       image: img2,
       link: "https://www.bhaskar.com/local/uttar-pradesh/kanpur/news/water-testing-device-made-in-iit-kanpur-132759708.html?_branch_match_id=1302918748758516150&utm_campaign=132759708&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0nMzMvM1k3Sy8zTjyqwDE0MKDCy9EgCAItchA4fAAAA",
       logo: logo3,
+      publishedAt: '22 Mar 2024'
     },
     {
       id: 2,
@@ -37,13 +40,23 @@ const MediaComponents = () => {
       image: img6,
       link: "https://www.amarujala.com/uttar-pradesh/kanpur/technofest-abhivyakti-2024-vajra-will-identify-enemy-country-s-drone-and-jam-it-startups-exhibition-in-iit-2024-03-16?pageId=1",
       logo: logo1,
+      publishedAt: '22 Mar 2024'
     },
     {
-      id: 2,
+      id: 3,
       name: "CLUIX: Redefining Water Purity Through Cutting-edge Analyzer",
       image: img4,
       link: "https://theinterview.world/cluix-redefining-water-purity-through-cutting-edge-analyzer",
       logo: logo4,
+      publishedAt: '22 Mar 2024'
+    },
+    {
+      id: 4,
+      name: "Cluix: Real-Time Water Testing Powered by IoT Innovation",
+      image: img11,
+      link: "https://yourstory.com/2025/06/cluix-real-time-water-testing-innovation",
+      logo: logo5,
+      publishedAt: '11 June 2025'
     },
   ];
 
@@ -105,7 +118,7 @@ const MediaComponents = () => {
                               ></Image>
                               <div className="flex items-center gap-3">
                                 <MdOutlineWatchLater />
-                                <span>22 Mar 2024</span>
+                                <span>{data?.publishedAt}</span>
                               </div>
                             </div>
                           </div>

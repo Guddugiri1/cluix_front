@@ -56,6 +56,13 @@ function NavBarComponents({ className }) {
     { name: "Shop Now", link: "https://mydukaan.io/cluix1" },
   ];
 
+  const isActiveLink = (link) => {
+  if (link === "/") {
+    return pathname === "/";
+  }
+  return pathname.startsWith(link);
+};
+
   const menuDropdown = [
     { name: "About Us", link: "/company/about-us" },
     { name: "Careers", link: "/company/apply-for-job" },
@@ -249,6 +256,7 @@ function NavBarComponents({ className }) {
                 <div className={`py-2 pt-2  `}>
                   <ul className="flex xl:gap-2  font-bold text-black  flex-col p-1 xl:p-3 md:p-0 mt-4  border border-gray-100 rounded-lg  md:space-x-0 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                     {menu.map((item, index) => {
+                      const isActive = isActiveLink(item.link);
                       return (
                         <li key={index} className="relative">
                           {item?.name == "Company" ? (

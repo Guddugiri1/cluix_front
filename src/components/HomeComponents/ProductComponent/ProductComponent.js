@@ -8,7 +8,7 @@ import { Button, Modal } from "antd";
 import { usePathname, useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa";
 import ViewMore from "@/components/shared/typography/ViewMore";
-import product1 from "../../../../public/img/C0121.png";
+import product1 from "../../../../public/img/device1.png";
 import product2 from "../../../../public/product/product8.png";
 import product4 from "../../../../public/product4.jpg";
 
@@ -206,14 +206,15 @@ const ProductComponent = () => {
               className="relative flex flex-col overflow-hidden  rounded-lg border border-gray-100 bg-white shadow-md shadow-gray-400"
             >
               <div
-                className="relative flex h-60 lg:h-80 overflow-hidden "
+                className="relative flex h-60 lg:h-80 overflow-hidden"
                 // href={`/product/${data?.id}`}
               >
                 <Image
-                  className="object-fill bg-white  "
+                  className={`bg-white object-fill ${data?.id === 2 ? '!max-w-[40%] !mx-auto !h-auto' : ''}`}
                   src={data?.image}
                   alt="product image"
                 />
+                
               </div>
               <div className="mt-4 px-5 pb-5">
                 <div>
@@ -285,7 +286,7 @@ const ProductComponent = () => {
                 // href={`/product/${data?.id}`}
               >
                 <Image
-                  className="object-fill bg-white  "
+                  className={`bg-white object-fill ${data?.id === 2 ? '!max-w-[40%] !mx-auto !h-auto' : ''}`}
                   src={data?.image}
                   alt="product image"
                 />
