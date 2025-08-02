@@ -34,6 +34,8 @@ const JobDetailsPage = () => {
     {
       id: 1,
       position: "Social Media Intern",
+      type: "internship",
+      pay: 'This will be discussed during the interview',
       description: "    If you are interested in being part of an innovative startup that works towards serving the common good. This opportunity is for students who are looking for some extra pocket money or a side hustle. Freshers can also apply",
       about: [
         {
@@ -265,7 +267,7 @@ const JobDetailsPage = () => {
                 <p className="text-black font-semibold text-lg py-1">
                   {item?.type === 'internship' ? 'Stipend' : 'Salary'}:{" "}
                   <span className="font-normal ">
-                    Up to ₹22,000/month
+                    {item?.pay}
                   </span>
                 </p>
                 <p className="text-black font-semibold text-lg py-1">
