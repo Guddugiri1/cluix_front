@@ -885,7 +885,7 @@ const ProductdetailsPage = ({ data }) => {
                     <Image
                       src={item?.images[imageId - 1]?.image}
                       alt={` Product ${item?.images[imageId]?.id}`}
-                      className={`rounded-xl h-[300px] w-[300px] lg:h-[500px] 2xl:h-[500px] 2xl:h=w-[500px] lg:w-[500px] ${item?.id === 2 && imageId === 1 ? 'w-full h-full lg:h-[500px] 2xl:h-[500px] 2xl:h=w-[30%] lg:w-[30%]' : ''}`}
+                      className={`rounded-xl h-[300px] w-[300px] lg:h-[400px] 2xl:h-[400px] 2xl:h=w-[400px] lg:w-[500px] ${item?.id === 2 && imageId === 1 ? 'w-[80%] h-full lg:h-[500px] 2xl:h-[500px] 2xl:h=w-[200px] lg:w-[200px]' : ''}`}
                       style={{ display: "inline-block" }}
                       objectFit="cover"
                     />
@@ -899,7 +899,7 @@ const ProductdetailsPage = ({ data }) => {
                             src={img?.image}
                             onMouseEnter={() => setImageId(img.id)}
                             alt={`Product ${img?.id}`}
-                            className={`rounded-xl w-24 h-[100px] cursor-pointer ${img?.id === 1 ? 'w-[50px] h-[100px]' : ''}`}
+                            className={`rounded-xl w-24 h-[100px] cursor-pointer ${img?.id === 1 && item?.id === 1 ? 'w-[100px] h-[100px]' : ''} ${img?.id === 1 && item?.id === 2 ? 'w-[50px] h-[100px]' : ''}`}
                           />
                         </div>
                       );
