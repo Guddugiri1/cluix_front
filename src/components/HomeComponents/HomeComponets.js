@@ -78,18 +78,37 @@ const HomeComponents = () => (
           <Marquee speed={100} autoFill={true}>
             <div className="flex items-center gap-4 sm:gap-6 md:gap-10 lg:gap-12 px-2 sm:px-4 md:px-6">
               {img.map((item) => (
-                <Image
+                (item?.id === 2 ? (<Image
                   key={item.id}
                   src={item.image}
                   alt="partner-logo"
-                  height={item.id === 2 ? 150 : 100} // Control image render height
-                  width={item.id === 2 ? 380 : 150} // Control image render width
-                  className={`object-contain ${
-                    item.id === 2
-                      ? "w-[200px] sm:w-[280px] md:w-[340px] lg:w-[380px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[150px]"
-                      : "h-[60px] sm:h-[80px] md:h-[100px] lg:h-[150px] w-[100px] sm:w-[120px] md:w-[140px] lg:w-[150px]"
-                  }`}
-                />
+                  height={240}
+                  width={300}
+                  objectFit="cover"
+                  // height={item.id === 2 ? 150 : 100} // Control image render height
+                  // width={item.id === 2 ? 380 : 150} // Control image render width
+                  // className={`object-contain ${
+                  //   item.id === 2
+                  //     ? "w-[200px] sm:w-[280px] md:w-[340px] lg:w-[380px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[150px]"
+                  //     : "h-[60px] sm:h-[80px] md:h-[100px] lg:h-[150px] w-[100px] sm:w-[120px] md:w-[140px] lg:w-[150px]"
+                  // }`}
+                />):
+                (<Image
+                  key={item.id}
+                  src={item.image}
+                  alt="partner-logo"
+                  height={120}
+                  width={120}
+                  objectFit="cover"
+                  // height={item.id === 2 ? 150 : 100} // Control image render height
+                  // width={item.id === 2 ? 380 : 150} // Control image render width
+                  // className={`object-contain ${
+                  //   item.id === 2
+                  //     ? "w-[200px] sm:w-[280px] md:w-[340px] lg:w-[380px] h-[80px] sm:h-[100px] md:h-[120px] lg:h-[150px]"
+                  //     : "h-[60px] sm:h-[80px] md:h-[100px] lg:h-[150px] w-[100px] sm:w-[120px] md:w-[140px] lg:w-[150px]"
+                  // }`}
+                />)
+                )
               ))}
             </div>
           </Marquee>

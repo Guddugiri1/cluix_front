@@ -30,62 +30,26 @@ const ProductComponent = () => {
   let productdata = [
     {
       id: 2,
-      name: "CLUIX C012",
+      name: "CLUIX C012",
       price: "76,227.00 + GST",
       image: product1,
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/2`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
+      morebtn: "View More", // Just text, not JSX
     },
     {
       id: 1,
       name: "Reagent Kit(100 Test)",
       price: "19,470.00 + GST",
       image: product,
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/1`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
+      morebtn: "View More", // Just text, not JSX
       btn: (
         <>
           <div onClick={showModal}>Add to cart</div>
         </>
       ),
     },
-    // {
-    //   id: 3,
-    //   name: "Inline TDS Meter",
-    //   price: "1200.00 + GST",
-    //   image: product2,
-    //   morebtn: (
-    //     <>
-    //       <div>
-    //         <Link className="text-black hover:text-black" href={`/product/3`}>
-    //           View More
-    //         </Link>
-    //       </div>
-    //     </>
-    //   ),
-    //   btn: (
-    //     <>
-    //       <div onClick={showModal}>Add to cart</div>
-    //     </>
-    //   ),
-    // },
     {
       id: 4,
-      name: "“Varunaa” water level monitoring system",
+      name: `"Varunaa" water level monitoring system`,
       price: "Coming Soon...",
       image: product4,
       btn: (
@@ -93,15 +57,7 @@ const ProductComponent = () => {
           <div onClick={showModal}>Add to cart</div>
         </>
       ),
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/4`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
+      morebtn: "View More", // Just text, not JSX
     },
   ];
   let productdataHome = [
@@ -110,15 +66,7 @@ const ProductComponent = () => {
       name: "CLUIX C012",
       price: "76,227.00 + GST",
       image: product1,
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/2`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
+      morebtn: "View More", // Just text, not JSX
     },
     {
       id: 1,
@@ -126,15 +74,7 @@ const ProductComponent = () => {
       price: "19,470.00 + GST",
       image: product,
 
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/1`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
+      morebtn: "View More",
       btn: (
         <>
           <div onClick={showModal}>Add to cart</div>
@@ -151,15 +91,7 @@ const ProductComponent = () => {
           <div onClick={showModal}>Add to cart</div>
         </>
       ),
-      morebtn: (
-        <>
-          <div>
-            <Link className="text-black hover:text-black" href={`/product/4`}>
-              View More
-            </Link>
-          </div>
-        </>
-      ),
+      morebtn: "View More",
     },
     // {
     //   id: 3,
@@ -210,11 +142,12 @@ const ProductComponent = () => {
                 // href={`/product/${data?.id}`}
               >
                 <Image
-                  className={`bg-white object-fill ${data?.id === 2 ? '!max-w-[40%] !mx-auto !h-auto' : ''}`}
+                  className={`bg-white object-fill ${
+                    data?.id === 2 ? "!max-w-[40%] !mx-auto !h-auto" : ""
+                  }`}
                   src={data?.image}
                   alt="product image"
                 />
-                
               </div>
               <div className="mt-4 px-5 pb-5">
                 <div>
@@ -260,15 +193,16 @@ const ProductComponent = () => {
                       {/* </Link> */}
                     </div>{" "}
                   </Link>
-                  <div
-                    data-aos="fade-up"
-                    className="flex border-2 items-center justify-center rounded-md  lg:px-5 lg:py-2.5 text-center text-sm font-medium text-black  focus:outline-none focus:ring-4 focus:ring-[var(--light-blue)]"
-                  >
-                    <button className="font-medium text-nowrap text-sm lg:text-lg h-fit ">
-                      {" "}
-                      {data?.morebtn}
-                    </button>
-                  </div>
+                  <Link href={`/product/${data?.id}`}>
+                    <div
+                      data-aos="fade-up"
+                      className="flex border-2 border-gray-300 items-center justify-center rounded-md lg:px-5 lg:py-2.5 text-center text-sm font-medium text-black hover:bg-black hover:text-white hover:border-black transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[var(--light-blue)] cursor-pointer"
+                    >
+                      <button className="font-medium text-nowrap text-sm lg:text-lg h-fit">
+                        {data?.morebtn}
+                      </button>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -286,7 +220,9 @@ const ProductComponent = () => {
                 // href={`/product/${data?.id}`}
               >
                 <Image
-                  className={`bg-white object-fill ${data?.id === 2 ? '!max-w-[40%] !mx-auto !h-auto' : ''}`}
+                  className={`bg-white object-fill ${
+                    data?.id === 2 ? "!max-w-[40%] !mx-auto !h-auto" : ""
+                  }`}
                   src={data?.image}
                   alt="product image"
                 />
@@ -334,15 +270,16 @@ const ProductComponent = () => {
                     </button>
                     {/* </Link> */}
                   </div>{" "}
-                  <div
-                    data-aos="fade-up"
-                    className="flex border-2 items-center justify-center rounded-md  lg:px-5 lg:py-2.5 text-center text-sm font-medium text-black  focus:outline-none focus:ring-4 focus:ring-[var(--light-blue)]"
-                  >
-                    <button className="font-medium text-nowrap text-sm lg:text-lg h-fit ">
-                      {" "}
-                      {data?.morebtn}
-                    </button>
-                  </div>
+                  <Link href={`/product/${data?.id}`}>
+                    <div
+                      data-aos="fade-up"
+                      className="flex border-2 border-gray-300 items-center justify-center rounded-md lg:px-5 lg:py-2.5 text-center text-sm font-medium text-black hover:bg-black hover:text-white hover:border-black transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[var(--light-blue)] cursor-pointer"
+                    >
+                      <button className="font-medium text-nowrap text-sm lg:text-lg h-fit">
+                        {data?.morebtn}
+                      </button>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

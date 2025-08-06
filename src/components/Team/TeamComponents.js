@@ -18,6 +18,7 @@ import img10 from "../../../public/customrs/img10.png";
 import img11 from "../../../public/customrs/img11.png";
 import img12 from "../../../public/customrs/img12.webp";
 import img13 from "../../../public/customrs/img13.jpeg";
+import img14 from "../../../public/customrs/img14.jpg";
 import Image from "next/image";
 
 const TeamComponents = () => {
@@ -68,6 +69,13 @@ const TeamComponents = () => {
     },
     {
       id: 7,
+      image: img14,
+      icon: <FaUsers className="h-8 w-8 text-white" />,
+      name: "Total Tests Carried Out",
+      data: "2528",
+    },
+    {
+      id: 14,
       image: img7,
       icon: <FaUsers className="h-8 w-8 text-white" />,
       name: "Total Tests Carried Out",

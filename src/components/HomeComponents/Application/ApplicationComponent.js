@@ -61,7 +61,6 @@ const ApplicationComponent = () => {
                     <h1 className=" text-xl lg:text-2xl text-white font-black">
                       {item?.name}
                     </h1>
-                   
                   </div>
                   <Image
                     src={item.img}
@@ -78,7 +77,7 @@ const ApplicationComponent = () => {
                       color: "transparent",
                     }}
                   />
-
+                  <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-60 transition-all duration-300 z-[5]" />
                   <div className="h-full w-full  group-hover:backdrop-blur-lg transition-all duration-300" />
                 </div>
               </div>

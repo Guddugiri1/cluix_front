@@ -33,7 +33,7 @@ const StaticsComponets = () => {
       id: 2,
       icon: <FaUsers className="h-8 w-8 text-white" />,
       name: "Our Reach in States",
-      data: "7",
+      data: "8",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const StaticsComponets = () => {
       id: 4,
       icon: <FaUsers className="h-8 w-8 text-white" />,
       name: "Total Tests Carried Out",
-      data: "2528",
+      data: "3457",
     },
   ];
   return (
@@ -73,7 +73,7 @@ const StaticsComponets = () => {
                           duration={20}
                           end={item?.data}
                         />
-                        <span className="font-bold pl-1 pb-1">+</span>
+                        <span className="font-bold pl-1 pb-1">{item?.id === 4 ? '+' : ''}</span>
                       </h2>
                       <p
                         className="leading-relaxed text-lg text-black font-semibold"
